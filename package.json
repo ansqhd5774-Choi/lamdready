@@ -8,7 +8,8 @@
     "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/lamdready.js",
     "build": "node scripts/build-assets.mjs",
     "deploy": "wrangler deploy",
-    "collect": "node scripts/collect-data.mjs"
+    "collect": "node scripts/collect-local.mjs",
+    "runner": "node scripts/run-data.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -5,7 +5,7 @@
 | 분야 | 확정 원천 | 인증/사용 범위 | 현재 구현 |
 |---|---|---|---|
 | 여행 예산 환율 | Frankfurter v2 / ECB | 키 없음, 일일 참고환율 | 실제 8통화 수집, Cloudflare API와 환산 UI |
-| 여행경보 | 외교부 국가·지역별 여행경보 (15076237) | 활용승인 및 공공데이터포털 인증키 | 서버 어댑터 구현, 키와 Provider 실응답 미검증 |
+| 여행경보 | 외교부 국가·지역별 여행경보 (15076237) | 활용승인 및 공공데이터포털 인증키 | 로컬 수집 어댑터 구현, 키와 Provider 실응답 미검증 |
 | 입국 준비·세관 | 일본·싱가포르·태국·호주 공식 기관 | 공개 HTML, 원문/약관 준수 | 8개 원천 수집 시도, 해시·시각·HTTP 상태 기록 |
 | 한국 귀국 세관·검역 | 관세청·농림축산검역본부 공식 안내 | 원문 검수 필요 | 기존 공식 링크 유지, 자동 판정 미확정 |
 | 세관 신고 환율 | 각 관할 세관의 공식 적용환율 | 일반 참고환율과 별도 | 미연결; 예산 환율을 세관 계산에 사용 금지 |
@@ -18,15 +18,15 @@
 EUR 원천 환율을 한 번 수집해 교차 환산한다. 작은 KRW 기준 값의 소수점 반올림 오차를 줄이기 위해 EUR 원천을 사용한다.
 8통화: EUR, KRW, USD, JPY, SGD, THB, AUD, CNY. 필요 범위부터 확장한다.
 `sourceDate`는 환율 관측일, `fetchedAt`은 실제 수집시각이며 별개다.
-캐시 1시간. 실패 시 저장 snapshot을 명시하고, 기준일 7일 초과 자료는 503과 rates=null로 중단한다.
+로컬 러너가 저장한 snapshot만 제공하고, 기준일 7일 초과 자료는 503과 rates=null로 중단한다.
 은행 환전/카드 수수료와 관할 세관 환율은 포함하지 않는다. customsRate=false.
 금액은 브라우저에서 계산하며 서버에는 통화 코드만 요청한다.
-별도 정기 작업은 생성하지 않았다. API 요청 시 최신 자료 수집과 캐시, `npm run collect`로 bounded 원문 수집을 수행한다.
+현재 실행 계약은 docs/local-runner-r2.md를 따른다. API 요청에서 외부 수집하지 않는다. npm run collect는 로컬 API 수집만, npm run runner는 검증 후 Cloudflare 배포 전송까지 수행한다.
 
 ## 여행경보 계약
 
 `GET /api/travel-advice?country=JP` (초기 JP/SG/TH/AU).
-Cloudflare Secret `MOFA_SERVICE_KEY`에 디코딩된 인증키를 저장한다. URL 전체·키를 로그/응답/Git에 남기지 않는다.
+로컬 러너 환경변수 `MOFA_SERVICE_KEY`에 디코딩된 인증키를 제공한다. Cloudflare에 키를 저장하지 않는다. URL 전체·키를 로그/응답/Git에 남기지 않는다.
 키 없으면 KEY_MISSING/503, 오류면 UNVERIFIED/503, 정상 응답의 data가 비면 NO_DATA. 경보 없음이나 안전으로 바꾸지 않는다.
 Provider 요청: 공식 TravelAlarmService2/getTravelAlarmList2, ServiceKey, returnType=JSON, numOfRows=10, pageNo=1, 국가코드 EQ.
 실제 키와 운영 응답 확인 전에는 어댑터를 검증된 여행경보 서비스로 표시하지 않는다.
@@ -45,3 +45,4 @@ HTTP 403/404 등은 우회하지 않고 원문 수동 검수로 남긴다.
 - https://www.data.go.kr/data/15076237/openapi.do
 - https://www.data.go.kr/data/3068846/openapi.do
 - 초기 4개 국가 공식 링크: data/countries.js
+

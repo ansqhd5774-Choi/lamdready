@@ -7,3 +7,4 @@ dist/
 .env.*
 .dev.vars*
 theme/lamdready-blogger-r1.xml
+local-data/
