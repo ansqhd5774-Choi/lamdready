@@ -4,7 +4,7 @@
   "underlyingProvider": "ECB",
   "source": "https://api.frankfurter.dev/v2/providers/ecb/rates?base=EUR&quotes=KRW,USD,JPY,SGD,THB,AUD,CNY",
   "sourceDate": "2026-10-08",
-  "fetchedAt": "2026-10-08T22:27:28.760Z",
+  "fetchedAt": "2026-10-08T22:42:02.335Z",
   "pivot": "EUR",
   "rates": {
     "EUR": 1,
