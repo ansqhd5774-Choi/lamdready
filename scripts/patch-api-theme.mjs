@@ -8,7 +8,7 @@ const replacements = [
   [/<script\b[^>]*>\/\/<!\[CDATA\[\s*\(\(\) => \{\s*'use strict';\s*const app = document.getElementById\('lr-app'\);[\s\S]*?\/\/\]\]><\/script>/g, `<script type="text/javascript">//<![CDATA[\n${fs.readFileSync('theme/lamdready.js', 'utf8')}\n//]]></script>`],
 ];
 for (const [pattern, replacement] of replacements) {
-  if ([...theme.matchAll(pattern)].length !== 1) throw Error('Expected exactly one LamdReady block');
+  if ([...theme.matchAll(pattern)].length !== 1) throw Error('Expected exactly one LandReady block');
   theme = theme.replace(pattern, () => replacement);
 }
 fs.writeFileSync('theme/lamdready-blogger-r1.xml', theme);

@@ -15,7 +15,7 @@ for (const country of countries) {
     const url = country[kind];
     const result = { country: country.code, kind, url, fetchedAt: new Date().toISOString(), reviewedAt: null, regulationVerified: false };
     try {
-      const r = await fetch(url, { signal: AbortSignal.timeout(10000), headers: { 'User-Agent': 'LamdReady/0.1 (+https://lamdready.blogspot.com/)' } });
+      const r = await fetch(url, { signal: AbortSignal.timeout(10000), headers: { 'User-Agent': 'LandReady/0.1 (+https://lamdready.blogspot.com/)' } });
       result.httpStatus = r.status; result.finalUrl = r.url; result.contentType = r.headers.get('content-type');
       if (r.ok) {
         const bytes = Buffer.from(await r.arrayBuffer());

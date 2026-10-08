@@ -14,7 +14,7 @@ export default {
     }
     if (path === '/') return new Response(null, { status: 302, headers: { ...headers, Location: publicSite } });
     if (path === '/health') {
-      return new Response(request.method === 'HEAD' ? null : JSON.stringify({ service: 'LamdReady', status: 'ok', publicSite, rulesAvailable: false }), { headers: { ...headers, 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
+      return new Response(request.method === 'HEAD' ? null : JSON.stringify({ service: 'LandReady', status: 'ok', publicSite, rulesAvailable: false }), { headers: { ...headers, 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
     }
     if (path.startsWith('/assets/')) {
       const asset = await env.ASSETS.fetch(request);

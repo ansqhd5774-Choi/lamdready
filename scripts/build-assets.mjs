@@ -7,7 +7,7 @@ for (const name of ['lamdready.css', 'lamdready.js', 'travel-coast-r3.png', 'lam
   fs.writeFileSync(`dist/assets/${name}`, content);
   files[name] = { sha256: createHash('sha256').update(content).digest('hex'), bytes: content.length };
 }
-fs.writeFileSync('dist/assets/manifest.json', JSON.stringify({ service: 'LamdReady', files }, null, 2));
-console.log('Built LamdReady public assets');
+fs.writeFileSync('dist/assets/manifest.json', JSON.stringify({ service: 'LandReady', files }, null, 2));
+console.log('Built LandReady public assets');
 
 
