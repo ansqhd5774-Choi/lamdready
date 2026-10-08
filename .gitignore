@@ -1,0 +1,9 @@
+backups/
+artifacts/
+node_modules/
+dist/
+.wrangler/
+.env
+.env.*
+.dev.vars*
+theme/lamdready-blogger-r1.xml
