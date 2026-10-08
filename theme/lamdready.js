@@ -3,7 +3,7 @@
   const app = document.getElementById('lr-app');
   if (!app) return;
   const countries = {
-    JP: { name: '일본', entry: ['Visit Japan Web', 'https://www.vjw.digital.go.jp/'], customs: ['일본 세관 · 여행자 안내', 'https://www.customs.go.jp/english/summary/passenger.htm'] },
+    JP: { name: '일본', entry: ['Visit Japan Web', 'https://services.digital.go.jp/en/visit-japan-web/'], customs: ['일본 세관 · 여행자 안내', 'https://www.customs.go.jp/english/summary/passenger.htm'] },
     SG: { name: '싱가포르', entry: ['ICA · 입국 조건과 SG Arrival Card', 'https://www.ica.gov.sg/enter-transit-depart/entering-singapore'], customs: ['싱가포르 세관 · 면세와 신고', 'https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/'] },
     TH: { name: '태국', entry: ['태국 공식 TDAC', 'https://tdac.immigration.go.th/'], customs: ['태국 세관', 'https://www.customs.go.th/'] },
     AU: { name: '호주', entry: ['호주 내무부 · 비자 안내', 'https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder'], customs: ['호주 국경수비대 · 면세 안내', 'https://www.abf.gov.au/entering-and-leaving-australia/can-you-bring-it-in/categories/duty-free'] },
@@ -37,4 +37,22 @@
     input.addEventListener('change', () => { try { localStorage.setItem('lamdready-check-' + input.dataset.check, input.checked ? '1' : '0'); } catch { get('lr-storage-note').textContent = '브라우저 저장을 사용할 수 없어 체크 상태가 저장되지 않습니다.'; } });
   });
   try { const saved = JSON.parse(localStorage.getItem('lamdready-trip-v1')); if (saved && countries[saved.destination]) { get('lr-destination').value = saved.destination; for (const [field,key] of [['lr-passport','passport'],['lr-origin','origin'],['lr-return','returnCountry']]) if ([...get(field).options].some(option => option.value === saved[key])) get(field).value = saved[key]; if (/^\d{4}-\d{2}-\d{2}$/.test(saved.date)) get('lr-date').value = saved.date; } } catch {}
+  get('lr-fx-form')?.addEventListener('submit', async event => {
+    event.preventDefault();
+    const amount = Number(get('lr-fx-amount').value);
+    const base = get('lr-fx-base').value;
+    const result = get('lr-fx-result');
+    const button = get('lr-fx-form').querySelector('button');
+    if (!Number.isFinite(amount) || amount < 0 || amount > 1000000000) return;
+    button.disabled = true; result.replaceChildren(element('p', '환율을 확인하고 있습니다.', 'lr-fine'));
+    try {
+      const response = await fetch('https://lamdready-assets.ansqhd5774.workers.dev/api/fx?base=' + encodeURIComponent(base) + '&quotes=KRW', { signal: AbortSignal.timeout(15000) });
+      if (!response.ok) throw Error('unavailable');
+      const data = await response.json();
+      if (data.base !== base || !Number.isFinite(data.rates?.KRW) || data.rates.KRW <= 0) throw Error('invalid');
+      result.replaceChildren(element('p', amount.toLocaleString('ko-KR') + ' ' + base + ' ≈ ' + (amount * data.rates.KRW).toLocaleString('ko-KR', { maximumFractionDigits: 2 }) + ' 원', 'lr-notice'));
+      result.append(element('p', '환율 기준일 ' + data.sourceDate + ' · 수집 ' + new Date(data.fetchedAt).toLocaleString('ko-KR') + ' · 출처 ECB / Frankfurter' + (data.delivery === 'snapshot-fallback' ? ' · 현재 제공처 연결 실패로 저장된 자료 사용' : ''), 'lr-fine'));
+    } catch { result.replaceChildren(element('p', '환율을 가져오지 못했습니다. 금액을 계산하지 않았습니다. 공식 출처를 확인하거나 잠시 후 다시 시도하세요.', 'lr-notice')); }
+    finally { button.disabled = false; }
+  });
 })();

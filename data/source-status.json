@@ -1,0 +1,113 @@
+{
+  "collectedAt": "2026-10-08T22:27:32.105Z",
+  "sources": [
+    {
+      "country": "JP",
+      "kind": "entry",
+      "url": "https://services.digital.go.jp/en/visit-japan-web/",
+      "fetchedAt": "2026-10-08T22:30:24.1727571Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://services.digital.go.jp/en/visit-japan-web/",
+      "contentType": "text/html",
+      "status": "FETCHED_UNREVIEWED",
+      "sha256": "8ab640c749cd96278f08052daac78ac545cb5e2e7e2a9f9efbfcb65b76e47ff8",
+      "bytes": 34086
+    },
+    {
+      "country": "JP",
+      "kind": "customs",
+      "url": "https://www.customs.go.jp/english/summary/passenger.htm",
+      "fetchedAt": "2026-10-08T22:27:28.927Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.customs.go.jp/english/summary/passenger.htm",
+      "contentType": "text/html",
+      "sha256": "baec320db0147621aac6485acdecef5a271d04d99f36d98cb033d74e8a864f2e",
+      "bytes": 24701,
+      "status": "FETCHED_UNREVIEWED"
+    },
+    {
+      "country": "SG",
+      "kind": "entry",
+      "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+      "fetchedAt": "2026-10-08T22:27:29.132Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "55d033340ffabe6b19e32900a5da3bf1b01ac3d1f0904c03387a6ac9010ecfda",
+      "bytes": 36861,
+      "status": "FETCHED_UNREVIEWED"
+    },
+    {
+      "country": "SG",
+      "kind": "customs",
+      "url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/",
+      "fetchedAt": "2026-10-08T22:27:29.307Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/",
+      "contentType": "text/html",
+      "sha256": "8968967ab3cada27d0fea01eb020ada9c004cd3939aaae71948a3b10ca58e0da",
+      "bytes": 634624,
+      "status": "FETCHED_UNREVIEWED"
+    },
+    {
+      "country": "TH",
+      "kind": "entry",
+      "url": "https://tdac.immigration.go.th/",
+      "fetchedAt": "2026-10-08T22:27:29.767Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://tdac.immigration.go.th/arrival-card/",
+      "contentType": "text/html",
+      "sha256": "355656eade10cbf9f81848dff3c4d1f9e0dfeb34d56312bf2422814dd904216d",
+      "bytes": 52586,
+      "status": "FETCHED_UNREVIEWED"
+    },
+    {
+      "country": "TH",
+      "kind": "customs",
+      "url": "https://www.customs.go.th/",
+      "fetchedAt": "2026-10-08T22:27:30.548Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 200,
+      "finalUrl": "https://www.customs.go.th/",
+      "contentType": "text/html; charset=UTF-8",
+      "sha256": "7224b9688b5be338112771cc9d9897e7b26d92fd99d938c4269235e42fb12397",
+      "bytes": 126801,
+      "status": "FETCHED_UNREVIEWED"
+    },
+    {
+      "country": "AU",
+      "kind": "entry",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+      "fetchedAt": "2026-10-08T22:27:31.798Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 403,
+      "finalUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+      "contentType": "text/html",
+      "status": "HTTP_ERROR"
+    },
+    {
+      "country": "AU",
+      "kind": "customs",
+      "url": "https://www.abf.gov.au/entering-and-leaving-australia/can-you-bring-it-in/categories/duty-free",
+      "fetchedAt": "2026-10-08T22:27:31.918Z",
+      "reviewedAt": null,
+      "regulationVerified": false,
+      "httpStatus": 403,
+      "finalUrl": "https://www.abf.gov.au/entering-and-leaving-australia/can-you-bring-it-in/categories/duty-free",
+      "contentType": "text/html",
+      "status": "HTTP_ERROR"
+    }
+  ]
+}

@@ -1,9 +1,14 @@
 const publicSite = 'https://lamdready.blogspot.com/';
+import { api } from './api.js';
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const path = new URL(request.url).pathname;
     const headers = { 'X-Robots-Tag': 'noindex', 'X-Content-Type-Options': 'nosniff' };
     if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', { status: 405, headers: { ...headers, Allow: 'GET, HEAD' } });
+    if (path.startsWith('/api/')) {
+      const response = await api(request, env, ctx);
+      return request.method === 'HEAD' ? new Response(null, response) : response;
+    }
     if (path === '/') return new Response(null, { status: 302, headers: { ...headers, Location: publicSite } });
     if (path === '/health') {
       return new Response(request.method === 'HEAD' ? null : JSON.stringify({ service: 'LamdReady', status: 'ok', publicSite, rulesAvailable: false }), { headers: { ...headers, 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
