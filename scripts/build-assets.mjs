@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 fs.mkdirSync('dist/assets', { recursive: true });
 const files = {};
-for (const name of ['lamdready.css', 'lamdready.js', 'travel-coast-r3.png']) {
+for (const name of ['lamdready.css', 'lamdready.js', 'travel-coast-r3.png', 'lamdready-logo.svg', 'favicon.png']) {
   const content = fs.readFileSync(`theme/${name}`);
   fs.writeFileSync(`dist/assets/${name}`, content);
   files[name] = { sha256: createHash('sha256').update(content).digest('hex'), bytes: content.length };
