@@ -6,6 +6,7 @@ export default {
     const path = new URL(request.url).pathname;
     const headers = { 'X-Robots-Tag': 'noindex', 'X-Content-Type-Options': 'nosniff' };
     if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', { status: 405, headers: { ...headers, Allow: 'GET, HEAD' } });
+    if (path === '/favicon.ico') { const asset = await env.ASSETS.fetch(new Request(new URL('/assets/favicon-r2.png', request.url))); const response=new Response(request.method === 'HEAD' ? null : asset.body,asset); response.headers.set('Cache-Control','no-cache'); return response; }
     if (path === '/trip') { const response=tripPage(request); return request.method === 'HEAD' ? new Response(null,response) : response; }
     if (path.startsWith('/api/')) {
       const response = await api(request, env, ctx);
@@ -26,4 +27,5 @@ export default {
     return new Response('Not found', { status: 404, headers });
   },
 };
+
 
