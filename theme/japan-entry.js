@@ -11,16 +11,17 @@
 })();
 
 (() => {
- const source=document.getElementById('jp-surname-source'),result=document.getElementById('jp-surname-result'),help=document.getElementById('jp-surname-help'),surname=document.querySelector('#jp-entry-form input[name="surname"]');
- if(!source||!result)return;
  const names={'김':'KIM','이':'LEE','박':'PARK','최':'CHOI','정':'JUNG','강':'KANG','조':'CHO','윤':'YOON','장':'JANG','임':'LIM','한':'HAN','오':'OH','서':'SEO','신':'SHIN','권':'KWON','황':'HWANG','안':'AHN','송':'SONG','전':'JEON','홍':'HONG','유':'YOO','고':'KO','문':'MOON','양':'YANG','손':'SON','배':'BAE','백':'BAEK','허':'HEO','남':'NAM','심':'SHIM','노':'NOH','하':'HA','곽':'KWAK','성':'SUNG','차':'CHA','주':'JOO','우':'WOO','구':'KOO','민':'MIN','진':'JIN','나':'NA','지':'JI','엄':'EOM','채':'CHAE','원':'WON','천':'CHEON','방':'BANG','공':'GONG','현':'HYUN','함':'HAM','변':'BYUN','남궁':'NAMGUNG','황보':'HWANGBO','제갈':'JEGAL','선우':'SUNWOO','독고':'DOKGO'};
- const sync=()=>{if(surname)surname.value=result.value;};
- source.addEventListener('input',()=>{
-  const value=source.value.trim().normalize('NFC');
-  result.value=names[value]||(/^[a-zA-Z -]+$/.test(value)?value.toUpperCase():'');sync();
-  help.textContent=!value?'영문 결과는 여권 표기와 맞춰 수정하세요.':result.value?'영문 결과는 여권 표기와 맞춰 수정하세요.':'자동 변환이 어렵습니다. 여권 영문 성을 입력하세요.';
- });
- result.addEventListener('input',sync);
- if(surname)surname.addEventListener('input',()=>{result.value=surname.value;});
- document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.textContent='영문 결과는 여권 표기와 맞춰 수정하세요.';});
+ const lead=['G','KK','N','D','TT','R','M','B','PP','S','SS','','J','JJ','CH','K','T','P','H'];
+ const vowel=['A','AE','YA','YAE','EO','E','YEO','YE','O','WA','WAE','OE','YO','U','WO','WE','WI','YU','EU','UI','I'];
+ const tail=['','K','K','K','N','N','N','T','L','K','M','L','L','L','P','L','M','P','P','T','T','NG','T','T','K','T','P','T'];
+ function given(v){if(!/^[가-힣a-zA-Z -]+$/.test(v))return '';return [...v].map(c=>{const n=c.charCodeAt(0)-44032;if(n<0||n>11171)return c.toUpperCase();return lead[Math.floor(n/588)]+vowel[Math.floor(n%588/28)]+tail[n%28];}).join('');}
+ for(const key of ['surname','given']){
+  const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),output=document.getElementById('jp-'+key+'-output'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
+  const sync=()=>{if(field)field.value=result.value;};
+  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);output.hidden=!v;sync();help.textContent=v&&!result.value?'자동 변환이 어렵습니다. 여권 영문 표기를 입력하세요.':'여권의 영문 표기와 맞춰 수정하세요.';};
+  source.addEventListener('input',convert);source.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();convert();}});document.querySelector('[data-convert="'+key+'"]').addEventListener('click',convert);result.addEventListener('input',sync);
+  field?.addEventListener('input',()=>{result.value=field.value;output.hidden=!field.value;});
+  document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';output.hidden=true;help.textContent='여권의 영문 표기와 맞춰 수정하세요.';});
+ }
 })();

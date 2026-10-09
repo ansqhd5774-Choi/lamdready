@@ -44,3 +44,14 @@
 .jp-surname-editor label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 #lr-app .jp-surname-editor input{height:48px;padding:10px 12px;margin-bottom:8px}
 #lr-app .jp-surname-editor .jp-conversion-help{margin-top:2px;font-size:12px;line-height:18px}
+
+/* Example / input / conversion on one row. */
+#lr-app .jp-inline-editor{margin-top:8px;padding-top:8px}
+.jp-entry-row{display:grid;grid-template-columns:86px minmax(0,1fr) 52px;gap:8px;align-items:center}
+#lr-app .jp-inline-example{font-size:12px;line-height:18px;color:#526e74}.jp-inline-example strong{color:#164e5a;white-space:nowrap}
+#lr-app .jp-inline-editor .jp-entry-row input{margin:0}
+#lr-app .jp-convert-button{height:48px;padding:0;border:0;border-radius:10px;background:#164e5a;color:white;font:700 13px sans-serif;cursor:pointer}
+#lr-app .jp-convert-button:focus-visible{outline:2px solid #3b8592;outline-offset:2px}
+.jp-result-row{margin-top:8px}.jp-result-row[hidden]{display:none}
+#lr-app .jp-inline-editor .jp-conversion-help{margin-top:8px}
+@media(max-width:600px){.jp-entry-row{grid-template-columns:72px minmax(0,1fr) 44px;gap:6px}#lr-app .jp-inline-editor .jp-entry-row input{padding:10px 8px}#lr-app .jp-inline-example{font-size:11px}}
