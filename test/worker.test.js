@@ -4,7 +4,7 @@ import worker from '../worker/index.js';
 test('public root redirects to Blogger; health never claims production rules', async () => {
   const root = await worker.fetch(new Request('https://example.test/'), {});
   assert.equal(root.status, 302);
-  assert.equal(root.headers.get('Location'), 'https://lamdready.blogspot.com/');
+  assert.equal(root.headers.get('Location'), 'https://landready.blogspot.com/');
   const health = await worker.fetch(new Request('https://example.test/health'), {});
   assert.equal((await health.json()).rulesAvailable, false);
 });
