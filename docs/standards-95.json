@@ -99,10 +99,11 @@
       "id": "C11",
       "candidate": "사용 검증 구분",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C12",
@@ -300,10 +301,11 @@
       "id": "C32",
       "candidate": "브랜드 표시",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C33",
@@ -483,28 +485,31 @@
       "id": "C52",
       "candidate": "완료 판정 분리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C53",
       "candidate": "실행 역할",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C54",
       "candidate": "도구·권한 확인",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C55",
@@ -520,19 +525,21 @@
       "id": "C56",
       "candidate": "중복 방지",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C57",
       "candidate": "실패 복구",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C58",
@@ -873,10 +880,11 @@
       "id": "H31",
       "candidate": "실행·완료·복구 기준",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/standards-reconciliation-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 사이트 실행 범위의 구현 및 기존 실제 증거 대조 완료. 전체 후보 및 검색 성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "H32",

@@ -6,7 +6,7 @@ export function formatEntry(key,value,{countryLookup={},cityLookup,other='',toda
  if(key==='country'){const name=countryLookup[v.toLocaleLowerCase()];return name?{text:name,error:''}:error('추천 목록에서 거주 국가를 선택하세요.');}
  if(key==='city'){const name=cityLookup?cityLookup[v.toLocaleLowerCase()]:cityNames[v];if(name)return {text:name,error:''};if(!/^[a-zA-Z .'-]+$/.test(v))return error('도시의 영문 표기를 입력하세요.');return {text:v.toUpperCase(),error:''};}
  if(key==='purpose'){if(v==='OTHER'){if(!other.trim())return error('기타 방문 목적을 영문으로 입력하세요.');if(!/^[\x20-\x7e]+$/.test(other))return error('기타 목적은 영문으로 입력하세요.');return {text:'OTHER: '+other.trim().toUpperCase(),error:''};}return ['TOURISM','BUSINESS','VISITING RELATIVES'].includes(v)?{text:v,error:''}:error('방문 목적을 선택하세요.');}
- if(key==='flight'){const flight=v.replace(/\s/g,'').toUpperCase();return /^[A-Z0-9]{2,3}\d{1,4}$/.test(flight)?{text:flight,error:''}:error('항공권의 편명을 입력하세요. 예: KE703');}
+ if(key==='flight'){const flight=v.replace(/\s/g,'').toUpperCase();if(/^[A-Z0-9]{2,3}\d{1,4}$/.test(flight)&&/[A-Z]/.test(flight))return {text:flight,error:''};return /^[a-zA-Z0-9][a-zA-Z0-9 .'-]{1,79}$/.test(v)&&/[a-zA-Z]/.test(v)?{text:v.toUpperCase(),error:''}:error('항공편 또는 선박의 영문 이름을 입력하세요.');}
  if(key==='stay'){if(!/^\d+$/.test(v)||Number(v)<1||Number(v)>3650)return error('체류 일수를 양의 정수로 입력하세요.');return {text:Number(v)+' '+(Number(v)===1?'DAY':'DAYS'),error:''};}
  if(key==='address'){return /^[\x20-\x7e\n]+$/.test(v)?{text:v,error:''}:error('예약 확인서의 영문 주소를 입력하세요.');}
  if(key==='phone'){return /^[+\d ()-]+$/.test(v)&&v.replace(/\D/g,'').length>=6?{text:v,error:''}:error('연락처를 숫자와 국가번호로 입력하세요.');}
