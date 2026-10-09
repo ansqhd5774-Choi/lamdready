@@ -14,3 +14,4 @@
 .lr-languages button{border:0}.lr-field input{min-width:0;text-overflow:ellipsis}
 
 .lr-languages button{padding:0;background:transparent;border:0;box-shadow:0 5px 10px #122e3930}.lr-languages button:before{inset:0;box-shadow:none;background:radial-gradient(ellipse at 35% 6%,#ffffff60,transparent 42%),linear-gradient(160deg,#ffffff30,transparent 40%,transparent 75%,#ffffff20)}.lr-languages button span{box-shadow:none}.lr-languages button:hover{box-shadow:0 8px 14px #122e3940}.lr-languages button[data-language=ko] img{object-fit:cover}@media(max-width:600px){.lr-languages button{padding:0}}
+.lr-languages button{overflow:hidden}.lr-languages button[data-language=ko] img{object-fit:contain;background:#fff}.lr-languages button:after{left:18%;right:18%;top:8%;height:14%}
