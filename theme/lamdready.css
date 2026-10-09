@@ -107,3 +107,5 @@
 #lr-app .jp-language-cards{gap:6px}
 #lr-app .jp-entry-row{grid-template-columns:78px minmax(0,1fr) 48px;gap:8px}
 @media(max-width:600px){#lr-app .jp-entry-row{grid-template-columns:74px minmax(0,1fr) 44px;gap:6px}}
+#lr-app .jp-entry-row:not(:has(.jp-inline-example)){grid-template-columns:minmax(0,1fr) 48px}
+@media(max-width:600px){#lr-app .jp-entry-row:not(:has(.jp-inline-example)){grid-template-columns:minmax(0,1fr) 44px}}
