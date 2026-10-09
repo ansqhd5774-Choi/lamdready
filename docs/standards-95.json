@@ -81,9 +81,9 @@
       "candidate": "변경 이력",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "docs/remaining-53-progress-20261010.md",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
+      "note": "삭제된 건강22글의 이전 검사는 역사 기록. 현재 여행 홈/폼의 canonical·검색 차단 헤더·서버 본문과 변경 이력을 다시 확인. 전체 검색엔진 처리 완료 아님."
     },
     {
       "id": "C10",
@@ -254,9 +254,9 @@
       "candidate": "검색 차단 점검",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "docs/remaining-53-progress-20261010.md",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
+      "note": "삭제된 건강22글의 이전 검사는 역사 기록. 현재 여행 홈/폼의 canonical·검색 차단 헤더·서버 본문과 변경 이력을 다시 확인. 전체 검색엔진 처리 완료 아님."
     },
     {
       "id": "C28",
@@ -283,9 +283,9 @@
       "candidate": "검색봇 렌더링",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "docs/remaining-53-progress-20261010.md",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
+      "note": "삭제된 건강22글의 이전 검사는 역사 기록. 현재 여행 홈/폼의 canonical·검색 차단 헤더·서버 본문과 변경 이력을 다시 확인. 전체 검색엔진 처리 완료 아님."
     },
     {
       "id": "C31",
@@ -321,10 +321,11 @@
       "id": "C34",
       "candidate": "이미지 정보",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "여행 양식 앞·뒷면 alt/치수와 공식 출처 확인, 번호·색상 가공 표시 배포. 그 외 자산 권리 전체 감사는 별도.",
+      "implementationVerified": true
     },
     {
       "id": "C35",
@@ -375,10 +376,11 @@
       "id": "C40",
       "candidate": "접근성",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "국가·도시 추천의 Tab 이동 오류 수정, 방향키 선택 및 4~14번 키보드 이동 확인. 360/390/768/1280 넘침 없음. 전체 WCAG·실제 200% 확대 검증은 별도.",
+      "implementationVerified": true
     },
     {
       "id": "C41",
@@ -574,10 +576,11 @@
       "id": "C61",
       "candidate": "비용 제한",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "여행 공개 점검 최대35요청/동시3/20초/재시도0/401·403·429 중단 구현. mock5개 및 실제8요청 PASS. 공급자별 전체 비용 한도는 별도.",
+      "implementationVerified": true
     },
     {
       "id": "C62",
@@ -743,18 +746,18 @@
       "candidate": "대표 URL·검색 차단",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "docs/remaining-53-progress-20261010.md",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
+      "note": "삭제된 건강22글의 이전 검사는 역사 기록. 현재 여행 홈/폼의 canonical·검색 차단 헤더·서버 본문과 변경 이력을 다시 확인. 전체 검색엔진 처리 완료 아님."
     },
     {
       "id": "H17",
       "candidate": "검색봇 렌더링",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "docs/remaining-53-progress-20261010.md",
+      "evidence": "docs/travel-remaining-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
+      "note": "삭제된 건강22글의 이전 검사는 역사 기록. 현재 여행 홈/폼의 canonical·검색 차단 헤더·서버 본문과 변경 이력을 다시 확인. 전체 검색엔진 처리 완료 아님."
     },
     {
       "id": "H18",
