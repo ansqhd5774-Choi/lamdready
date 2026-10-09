@@ -14,19 +14,21 @@
   },
   "naver": {
     "publicVerificationTag": "CONFIRMED",
-    "ownership": "WAITING_USER_CAPTCHA_APPROVAL",
-    "sitemapSubmitted": "NOT_SUBMITTED_CURRENT_DOMAIN",
+    "ownership": "VERIFIED_MANUAL_STATE_CONFIRMED",
+    "sitemapSubmitted": "CONFIRMED_ONCE",
     "crawl": "UNVERIFIED",
     "index": "UNVERIFIED",
-    "evidence": "Blogger save + public DOM; Search Advisor CAPTCHA dialog"
+    "evidence": "artifacts/naver-landready-sitemap.png; current site management accessible; no crawl/index report data",
+    "sitemapRegisteredAt": "26.10.10 03:08:13 (provider display)"
   },
   "bing": {
     "publicVerificationTag": "CONFIRMED",
     "ownership": "PROVIDER_VERIFICATION_ERROR",
-    "registration": "STATE_UNKNOWN",
+    "registration": "REGISTERED_UNVERIFIED_CONFIRMED",
     "sitemapSubmitted": "NOT_SUBMITTED_CURRENT_DOMAIN",
     "index": "UNVERIFIED",
-    "evidence": "artifacts/bing-landready-verification-error.png"
+    "evidence": "artifacts/bing-landready-verification-error.png",
+    "registrationEvidence": "artifacts/bing-landready-registered-unverified.png; existing site list Not verified"
   },
   "indexNow": {
     "status": "DEFERRED_PLATFORM_REVIEW",

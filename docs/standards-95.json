@@ -195,10 +195,10 @@
       "id": "C21",
       "candidate": "NAVER Search Advisor",
       "eligible": true,
-      "status": "WAITING_USER",
-      "evidence": "data/search-status.json",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; artifacts/naver-landready-sitemap.png",
       "runtimeVerified": false,
-      "note": "현재 도메인 네이버 인증 태그 게시 완료. 보안문자 별도 승인 대기; 소유 확인과 사이트맵 제출 미완료"
+      "note": "현재 주소 소유 확인된 관리 화면 및 사이트맵 등록 행 확인. 수집·색인·노출은 데이터 없음으로 미검증."
     },
     {
       "id": "C22",
@@ -698,10 +698,10 @@
       "id": "H12",
       "candidate": "네이버 검색 관리",
       "eligible": true,
-      "status": "WAITING_USER",
-      "evidence": "data/search-status.json",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; artifacts/naver-landready-sitemap.png",
       "runtimeVerified": false,
-      "note": "현재 도메인 네이버 인증 태그 게시 완료. 보안문자 별도 승인 대기; 소유 확인과 사이트맵 제출 미완료"
+      "note": "현재 주소 소유 확인된 관리 화면 및 사이트맵 등록 행 확인. 수집·색인·노출은 데이터 없음으로 미검증."
     },
     {
       "id": "H13",
