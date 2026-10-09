@@ -55,3 +55,4 @@
 .jp-result-row{margin-top:8px}.jp-result-row[hidden]{display:none}
 #lr-app .jp-inline-editor .jp-conversion-help{margin-top:8px}
 @media(max-width:600px){.jp-entry-row{grid-template-columns:72px minmax(0,1fr) 44px;gap:6px}#lr-app .jp-inline-editor .jp-entry-row input{padding:10px 8px}#lr-app .jp-inline-example{font-size:11px}}
+#lr-app .jp-inline-editor{margin-left:-40px;width:calc(100% + 40px)}
