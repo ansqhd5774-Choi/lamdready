@@ -5,3 +5,5 @@ test('questions do not assume NO and free text is never fake translated',()=>{fo
 test('purpose OTHER requires specific English; flight and signature format',()=>{assert.ok(formatEntry('purpose','OTHER').error);assert.equal(formatEntry('purpose','OTHER',{other:'study'}).text,'OTHER: STUDY');assert.equal(formatEntry('flight','ke 703').text,'KE703');assert.equal(formatEntry('signature','Hong Gildong').text,'HONG GILDONG');});
 
 test('arrival transport accepts vessel names and rejects unsupported text',()=>{assert.equal(formatEntry('flight','PanStar Dream').text,'PANSTAR DREAM');assert.ok(formatEntry('flight','팬스타').error);assert.ok(formatEntry('flight','123').error);});
+
+test("birth remains a whole-field keyboard button",async()=>{const h=await tripPage(new Request("https://test/trip?origin=KR&destination=JP")).text();assert.match(h,/<button id="jp-field-birth" class="jp-birth-trigger"/);});
