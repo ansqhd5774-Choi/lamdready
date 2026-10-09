@@ -56,3 +56,40 @@
 #lr-app .jp-inline-editor .jp-conversion-help{margin-top:8px}
 @media(max-width:600px){.jp-entry-row{grid-template-columns:72px minmax(0,1fr) 44px;gap:6px}#lr-app .jp-inline-editor .jp-entry-row input{padding:10px 8px}#lr-app .jp-inline-example{font-size:11px}}
 #lr-app .jp-inline-editor{margin-left:-40px;width:calc(100% + 40px)}
+
+/* Declaration typography and spacing based on the mobile input audit. */
+#lr-app .jp-entry{font-size:14px;line-height:1.5}
+#lr-app .jp-heading h2{font-size:22px;line-height:1.35}
+#lr-app .jp-language-cards{gap:8px;margin:16px 0}
+#lr-app .jp-language-cards li{padding:12px;gap:10px;border-radius:12px}
+#lr-app .jp-language-cards .jp-item-number{width:24px;height:24px;font-size:11px}
+#lr-app .jp-item-languages .jp-item-ja,#lr-app .jp-item-languages .jp-item-en{font-size:12px;line-height:18px;margin-bottom:3px;color:#526e74}
+#lr-app .jp-item-languages .jp-item-ko{font-size:14px;line-height:21px}
+#lr-app .jp-surname-card .jp-item-en,#lr-app .jp-surname-card .jp-item-ko{line-height:21px;margin-bottom:0}
+#lr-app .jp-inline-editor{margin-left:-34px;width:calc(100% + 34px)}
+.jp-entry-row{grid-template-columns:78px minmax(0,1fr) 48px;gap:8px}
+#lr-app .jp-surname-editor input,#lr-app .jp-grid input,#lr-app .jp-grid select{font-size:14px;line-height:20px;min-height:48px;border-radius:8px}
+#lr-app .jp-convert-button{font-size:12px;border-radius:8px;min-width:44px}
+#lr-app .jp-inline-example{font-size:12px;line-height:18px}
+#lr-app .jp-inline-editor .jp-conversion-help{font-size:12px;line-height:18px;color:#526e74}
+#lr-app .jp-note,#lr-app .jp-notice{font-size:12px;line-height:1.6;padding:12px;margin:12px 0}
+#lr-app .jp-grid{gap:12px}#lr-app .jp-grid label{font-size:12px}
+#lr-app .jp-card-back summary,.jp-prep-details summary{font-size:13px;min-height:44px;padding:12px;background:#eaf3f4;border-radius:8px;cursor:pointer}
+.jp-prep-details{margin:12px 0}
+#lr-app .jp-actions button,#lr-app .jp-entry>.jp-primary{font-size:14px;min-height:48px;padding:12px;border-radius:8px;text-align:center}
+#lr-app .lr-preparation>.jp-entry~p{font-size:12px;line-height:1.6}
+#lr-app .lr-preparation>.jp-entry~a{font-size:13px;padding:12px;min-height:44px}
+@media(max-width:600px){
+ #lr-app:has(.jp-entry) .lr-header{width:calc(100% - 32px);padding:20px 0;gap:16px}
+ #lr-app:has(.jp-entry) .lr-brand{font-size:22px}
+ #lr-app:has(.jp-entry) .lr-languages{gap:10px}
+ #lr-app:has(.jp-entry) main{width:calc(100% - 24px);margin-top:24px}
+ #lr-app .jp-heading{padding:0 30px 4px}
+ #lr-app .jp-heading h2{font-size:20px}
+ #lr-app .lr-preparation>.lr-trip-nav{top:12px;left:12px}
+ #lr-app .jp-heading .lr-route-chips{gap:6px;margin:10px 0 4px;flex-wrap:nowrap}
+ #lr-app .lr-country-chip{font-size:12px;padding:6px 8px;gap:4px;border-radius:8px}
+ #lr-app .lr-country-chip small{font-size:9px;padding:2px 3px}
+ #lr-app .jp-card-photo{margin:16px 0 8px}
+ .jp-entry-row{grid-template-columns:70px minmax(0,1fr) 44px;gap:6px}
+}
