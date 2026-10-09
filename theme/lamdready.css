@@ -211,3 +211,32 @@
  #lr-app.lr-japan-trip #jp-field-country-result{font-size:12px;line-height:17px}
  #lr-app.lr-japan-trip input[type="date"]{font-size:12px;padding:10px 4px}
 }
+
+/* Date selection and country-scoped searchable location controls. */
+#lr-app.lr-japan-trip .jp-birth-trigger{grid-column:1;grid-row:1;border:0;border-radius:0;min-width:0;height:44px;padding:8px;background:#fff;color:#10283c;font:700 13px/22px 'Segoe UI','Malgun Gothic',sans-serif;cursor:pointer}
+#lr-app.lr-japan-trip .jp-birth-trigger:focus-visible{outline:2px solid #21848d;outline-offset:-3px}
+#lr-app.lr-japan-trip .jp-location-source{position:relative;grid-column:1;grid-row:1;min-width:0;background:#fff}
+#lr-app.lr-japan-trip .jp-location-source input{padding-right:34px;padding-left:8px}
+#lr-app.lr-japan-trip .jp-list-toggle{position:absolute;right:0;top:0;width:32px;height:44px;border:0;background:transparent url('/assets/chevron-down.svg') center/16px no-repeat;cursor:pointer}
+#lr-app.lr-japan-trip .jp-list-toggle:focus-visible{outline:2px solid #21848d;outline-offset:-3px}
+#lr-app.lr-japan-trip .jp-all-editor{position:relative}
+#lr-app.lr-japan-trip .jp-language-cards li:has(.jp-location-list:not([hidden])){position:relative;z-index:3}
+#lr-app.lr-japan-trip .jp-location-list{position:absolute;top:50px;left:0;right:0;max-height:240px;overflow:auto;background:#fff;border:1px solid #cddfe6;border-radius:8px;padding:4px;box-shadow:0 8px 24px #10283c1c;z-index:5}
+#lr-app.lr-japan-trip .jp-location-list[hidden]{display:none}
+#lr-app.lr-japan-trip .jp-location-list button{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:44px;border:0;border-radius:5px;padding:8px 10px;text-align:left;background:#fff;color:#10283c;font:700 13px/20px 'Segoe UI','Malgun Gothic',sans-serif;cursor:pointer}
+#lr-app.lr-japan-trip .jp-location-list small{font-size:11px;color:#617184;text-align:right}
+#lr-app.lr-japan-trip .jp-location-list button:hover,#lr-app.lr-japan-trip .jp-location-list button[aria-selected="true"]{background:#e9f6f7}
+#lr-app.lr-japan-trip .jp-location-list p{margin:0;padding:8px;font-size:12px;line-height:18px}
+#lr-app.lr-japan-trip .jp-date-dialog{width:calc(100% - 32px);max-width:360px;padding:20px;border:1px solid #dfe7ec;border-radius:14px;box-shadow:0 16px 48px #10283c30;background:#fff;color:#10283c}
+.jp-date-dialog::backdrop{background:#10283c66}
+#lr-app.lr-japan-trip .jp-date-dialog h3{margin:0 0 16px;font-size:17px;line-height:24px}
+#lr-app.lr-japan-trip .jp-date-selects{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px}
+#lr-app.lr-japan-trip .jp-date-selects label{font-size:12px;color:#617184}
+#lr-app.lr-japan-trip .jp-date-selects select{display:block;width:100%;min-width:0;height:44px;margin-top:5px;padding:6px;border:1px solid #cddfe6;border-radius:7px;background:#fff;color:#10283c;font:700 14px 'Segoe UI','Malgun Gothic',sans-serif}
+#lr-app.lr-japan-trip .jp-date-error{margin:8px 0 0;color:#a34230;font-size:12px;line-height:18px}
+#lr-app.lr-japan-trip .jp-date-error:empty{display:none}
+#lr-app.lr-japan-trip .jp-date-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+#lr-app.lr-japan-trip .jp-date-actions button{min-height:44px;padding:8px 16px;border:1px solid #cddfe6;border-radius:7px;background:#fff;color:#10283c;font:700 13px 'Segoe UI','Malgun Gothic',sans-serif;cursor:pointer}
+#lr-app.lr-japan-trip .jp-date-actions [data-date-apply]{background:#17636f;color:#fff;border-color:#17636f}
+#lr-app.lr-japan-trip .jp-city-credit{margin:10px 0;font-size:11px;line-height:17px;color:#617184}
+#lr-app.lr-japan-trip .jp-city-credit a{display:inline;padding:0;margin:0;border:0;font-size:inherit;text-decoration:underline}

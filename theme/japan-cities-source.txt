@@ -1,0 +1,7 @@
+City suggestions: GeoNames cities15000 extract, retrieved 2026-10-10.
+Source: https://download.geonames.org/export/dump/cities15000.zip
+Documentation: https://download.geonames.org/export/dump/
+License: Creative Commons Attribution 4.0 https://creativecommons.org/licenses/by/4.0/
+Attribution: GeoNames https://www.geonames.org/
+Derived subset: ISO country, population-ranked city names, ASCII spelling, Korean aliases where available.
+Only ASCII spellings usable in this form are retained. Suggestions cover cities with population >15000 and capitals; this is not an exhaustive list of every settlement. Other cities can be entered in English.
