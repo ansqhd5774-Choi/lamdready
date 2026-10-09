@@ -80,10 +80,10 @@
       "id": "C9",
       "candidate": "변경 이력",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/remaining-53-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
     },
     {
       "id": "C10",
@@ -253,10 +253,10 @@
       "id": "C27",
       "candidate": "검색 차단 점검",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/remaining-53-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
     },
     {
       "id": "C28",
@@ -282,10 +282,10 @@
       "id": "C30",
       "candidate": "검색봇 렌더링",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/remaining-53-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
     },
     {
       "id": "C31",
@@ -742,19 +742,19 @@
       "id": "H16",
       "candidate": "대표 URL·검색 차단",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/remaining-53-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
     },
     {
       "id": "H17",
       "candidate": "검색봇 렌더링",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/remaining-53-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개23문서의 차단·대표URL·서버본문 증거와19개설명 공개 반영, 기존글 반응형/테마 수정 이력 확보. 해당 기준의 검증된 범위만 적용; 전체콘텐츠·검색색인 완료아님."
     },
     {
       "id": "H18",
