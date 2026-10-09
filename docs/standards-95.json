@@ -272,9 +272,9 @@
       "candidate": "링크·응답 오류",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "scripts/audit-public.mjs",
+      "evidence": "scripts/audit-public.mjs; scripts/audit-links.mjs; artifacts/link-audit.json; scripts/resume-links.mjs; artifacts/link-audit-resume.json",
       "runtimeVerified": false,
-      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "note": "22/22 공개 글 홈 anchor graph 도달. 기존 선정 내부링크311개 +feed/sitemap2 총313 URL 응답 실패0. 외부·soft404·이미지 의미 검사 및 추가 확장탐색 제외.",
       "implementationVerified": true
     },
     {
@@ -356,18 +356,18 @@
       "candidate": "성능 측정",
       "eligible": true,
       "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "evidence": "scripts/audit-performance.mjs; artifacts/performance-audit.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "정적 공개 자산 용량·로딩 인벤토리 추가. 실제 모바일 waterfall·Lighthouse·CWV 미측정이므로 DEFERRED 유지."
     },
     {
       "id": "C39",
       "candidate": "모바일 가독성",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "artifacts/parallel-mobile-360.png; artifacts/parallel-mobile-360-date.png; docs/operations-parallel-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "작성 도구 360px 가로 넘침 없음, 날짜 창 화면 내 배치. 기존390/1280 검증 재사용. 전체 Blogger 글 UI 검증 아님."
     },
     {
       "id": "C40",
@@ -753,10 +753,10 @@
       "id": "H18",
       "candidate": "전체 링크 도달성",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "scripts/audit-links.mjs; artifacts/link-audit.json; scripts/resume-links.mjs; artifacts/link-audit-resume.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "22/22 공개 글 홈 anchor graph 도달. 기존 선정 내부링크311개 +feed/sitemap2 총313 URL 응답 실패0. 외부·soft404·이미지 의미 검사 및 추가 확장탐색 제외."
     },
     {
       "id": "H19",

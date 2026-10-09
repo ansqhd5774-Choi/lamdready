@@ -5,14 +5,17 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/lamdready.js && node --check worker/trip-metadata.js && node --check theme/japan-entry.js && node --check theme/japan-fields.js && node --check theme/japan-pickers.js && node --check theme/entry-events.js && node --check scripts/audit-inventory.mjs && node --check scripts/review-sources.mjs",
+    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/lamdready.js && node --check worker/trip-metadata.js && node --check theme/japan-entry.js && node --check theme/japan-fields.js && node --check theme/japan-pickers.js && node --check theme/entry-events.js && node --check scripts/audit-inventory.mjs && node --check scripts/review-sources.mjs && node --check scripts/audit-links.mjs && node --check scripts/audit-performance.mjs && node --check scripts/resume-links.mjs",
     "build": "node scripts/build-assets.mjs && node scripts/check-assets.mjs",
     "deploy": "wrangler deploy",
     "collect": "node scripts/collect-local.mjs",
     "runner": "node scripts/run-data.mjs",
     "audit:public": "node scripts/audit-public.mjs",
     "audit:inventory": "node scripts/audit-inventory.mjs",
-    "review:sources": "node scripts/review-sources.mjs"
+    "review:sources": "node scripts/review-sources.mjs",
+    "audit:links": "node scripts/audit-links.mjs",
+    "audit:performance": "node scripts/audit-performance.mjs",
+    "audit:links:resume": "node scripts/resume-links.mjs"
   },
   "engines": {
     "node": ">=20"
