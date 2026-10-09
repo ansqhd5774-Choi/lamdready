@@ -1,39 +1,38 @@
-# 남은 운영 의존 조건과 재개 지점
+# 여행 사이트 남은 운영 의존 조건
 
-2026-10-10. 이 문서는 현재 승인 작업의 준비 명세다. 새 계정·외부 발송·자동화·유료 서비스·원장 상태 변경을 실행하지 않았다. 비밀번호·token·개인정보를 요구하지 않는다. 의존 조건은 해당 작업만 대기시키며 전체 서비스 BLOCKER로 확대하지 않는다.
+2026-10-10 여행범위 정정. 현재공개대상은LandReady홈과여행준비폼이다. artifacts/legacy-post-removal-20261010.json에서삭제22개공개404/removed=true,publicPostCount=0,PASS_PUBLIC_REMOVAL확인했다. 건강글metadata/alt/홍보/건강원문검수는현재남은조건에서제외한다.95원장status/숫자는변경하지않는다.
 
-| 조건 | 관련 ID | 현재 준비 / 확인된 범위 | 다음 필수 실행 | 완료 증거 / 중단 조건 |
-|---|---|---|---|---|
-| 오류 접수 연락처 없음 | C60/H26 | 오류 접수→검토→수정→검증 기준 존재. 가짜 전송 완료 UI 없음 | 기존 접수 주소 또는 실제 받을 이메일 확정→접수 방식 구현→비개인정보 시험1회 | 실제 수신 확인 후 접수 가능 보고. 수신 실패하면 STOP, 사용자 개인정보 전송 금지 |
-| 운영 일정 미확정 | C62/H32 | 제한된 audit/public/inventory/links/source 명령 및 실패 재개 방식 있음 | 시간대·주기·대상·수신조건·실행비용 확정 후 공식 자동화 설정 | 실제 최초 실행/checkpoint/결과. 일정 저장만 반복 실행 성공으로 보고하지 않음 |
-| 검색 성과 표본 없음 | C42/C43/C44/H29 | 검색 등록과 sitemap 제출·Provider 상태 기록이 있음 | 검색어·노출·클릭·기간·표본·변경일 확보→비교 가능한 기간 정의 | 실제 보고서 근거. 표본 없음은 삭제 근거가 아니며 수집·색인·노출을 동일시하지 않음 |
-| Analytics 연결·실제 수집 미검증 | C45/H27 | Blogger analytics include, 페이지 메모리 copy/click 코드 존재만 확인 | 실제 현재 설정과 제공자 수집 증거 확인→운영자·중복·결측·지연 조건 정의 | 시험 이벤트 실제 수집 및 개인정보 제외 확인. 입력 원문을 보내지 않음 |
-| 실사용 성능 표본 없음 | C38/H25 | 기존 정적 자산·모바일 화면 증거 존재 | 실험실 결과와 실사용 CWV를 분리해 표본이 생길 때 확인 | 실험실 점수를 실사용 INP/CWV 성공으로 대체하지 않음 |
-| 실제 외부 게시 없음·채널 미확정 | C48/C49/C50/H28 | docs/promotion-drafts-20261010.md에 여행1개/중립19개 원고와 UTM 초안 준비 | 채널·게시 범위·채널규칙 확정→중복 확인→게시→실제 URL 확인 | 실제 게시URL·날짜·실제 유입을 구분. 이 문서는 발송 승인이 아니며 새 유료 실행 금지 |
-| 본문 주제 충돌3개 | C1/C2/C3/C5/C51/H1/H3/H30 | Kamut/Wheatgrass/Goat milk HOLD_CONTENT_REVIEW | 현재 기존 글 원문·의도 확인 후 정정 필요 범위 특정 | 본문·표제 일치와 근거 검수. 여행 콘텐츠로 전환·삭제·URL통합 임의 실행 금지 |
-| 건강 원문 주장 미검증 | C8/C12/C13/C14/H4/H5/H8 |22개 원문·heading·중립설명 후보 준비. 치료 사실 검증 아님 | 실제 주장 단위 공식 원문 검토를 별도 범위로 결정 | 조회와 검수·건강정보 정확성 구분. 새로운 주장·복용 권고를 가짜 근거로 채우지 않음 |
-| Bing 소유 확인 미완료 | C22/H13 | 마지막 data/search-status.json: 등록 유지/Not verified, 공개tag 있음 | 현재 제공자 상태 먼저 읽고 새 증거가 있을 때만 인증 재개→sitemap 목록 확인 | 소유 확인/제출 증거. 동일 오류 무조건 재시도·중복등록 금지 |
-| Google 수집·네이버 색인 미검증 | C20/C21/C24/H10/H11/H12 | 저장된 등록·제출 증거만 있음 | 실제 제공자 최신 리포트 읽기; 오류와 처리중을 분리 | 등록·제출·수집·색인·노출·유입 단계별 기록. 과거 증거를 실시간 확인으로 표현하지 않음 |
-| IndexNow 키 경로 미확정 | C23/H14 | Blogger root key 경로 제약, noindex Worker 기능 존재 | 지원 경로·소유권·비용·실제 대상URL 확인 후 적용여부 결정 | 공식 응답/실제 키소유 증거. 준비 도구를 색인용으로 전환하지 않음 |
+| 조건 | 관련 ID | 현재 준비·남은실행 | 완료증거 / 중단조건 |
+|---|---|---|---|
+| 오류접수연락처없음 | C60/H26 | 사용자가연락처없다고답함. 여행소개/공식근거/검수수정원칙준비. 반복요청/가짜폼생성금지 | 실제접수수단이생길때시험1회수신/처리. 개인정보발송금지. 그전이묶음만대기 |
+| 일정미확정 | C62/H32 | 여행public/inventory/source 검사와checkpoint기반실행조건. 주기/시각/비용/통지조건미확정 | 승인일정설정후실제첫실행/결과. 일정저장만반복성공으로보고금지 |
+| 여행검색표본없음 | C42/C43/C44/H29 | 현재여행URL의검색어/노출/클릭/기간/변경일확보필요. 삭제건강글성과제외 | 실제표본과비교기간. 표본없음을전체BLOCKER/삭제근거로쓰지않음 |
+| 분석실수집미검증 | C45/H27 | 현재여행사이트기존설정/네트워크와허용이벤트수신확인필요. include/script존재만으로계정연동판정금지 | 개인정보없는실제시험수신·운영자/중복/결측/지연구분. 새계정임의생성금지 |
+| 실사용성능표본없음 | C38/H25 | 여행홈/폼실험실·화면결과와실사용CWV분리 | 실험실점수를실사용INP/CWV성공으로대체금지 |
+| 여행홍보채널미확정 | C48/C49/C50/H28 | promotion-drafts-20261010.md여행1원고/UTM준비. 게시0회 | 실제채널/규칙/게시범위후승인된게시URL/날짜/유입각각확인. 삭제19원고게시금지 |
+| 여행주장-공식근거연결 | C8/C12/C13/C14/H4/H5/H8 | 양식14항목·디지털청·세관3원천의문구/위치/검수일/적용범위/불확실성연결 | 양식준비·비자적격성·세관판정구분. 조회200을규정판정성공으로보고금지 |
+| Bing소유확인미완료 | C22/H13 | 저장상태등록유지미인증. 실제현재상태먼저읽기 | 새증거가있을때만검증재개. 동일오류/중복등록금지. 소유/제출/색인분리 |
+| Google/네이버수집색인미검증 | C20/C21/C24/H10/H11/H12 | 삭제후글0의sitemap과현재여행홈상태를제공자리포트에서확인 | 등록/제출/수집/색인/노출/유입분리. 과거22글검사를현재수집증거로쓰지않음 |
+| IndexNow지원경로 | C23/H14 | Blogger소유키경로·지원·예산확인후적용여부결정 | 공식지원/키소유응답. noindex폼을대체색인대상으로변경금지 |
+| 여행탐색·이미지잔여 | C6/C7/C34/C36/C37/H19/H20/H24 | 현재여행홈/폼/공식안내/여행자산만대상목록화 | 실제현재링크/alt/치수/디코딩/권리. 삭제건강링크313개/이미지139개를현재잔여로검사하지않음 |
 
-## 이미 기록된 공식 근거 링크
+## 기존 공식 링크 재사용
 
-아래는 docs/site-operations.md와 data/review-sources.json에 이미 등록된 링크 재사용이다. 이 문서 작성에서 새 원문 확인·최신 규정 검증을 실행하지 않았다.
+새원문조회없이기존site-operations/review-sources의링크를재사용했다. 최신규정·전체검수완료를주장하지않는다.
 
-- [일본 외국인 입국 기록 양식](https://www.moj.go.jp/isa/content/930002136.pdf): 양식 출처. 조회·실제 검수 상태는 원천 원장을 따름.
-- [Visit Japan Web 공식 서비스 안내](https://www.digital.go.jp/en/services/visit_japan_web-en): 준비 도구와 공식 제출 역할 구분.
-- [Visit Japan Web 실제 제출](https://www.vjw.digital.go.jp/main/): 링크 이동과 실제 제출 성공을 구분.
-- [일본 세관 입국자 안내](https://www.customs.go.jp/english/summary/passenger.htm): 반입·세관 근거 대상; 새 규정 주장 없음.
-- [Google noindex 안내](https://developers.google.com/search/docs/crawling-indexing/block-indexing): 의도적 검색 제외와 실패를 구분.
-- [Google sitemap 안내](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap): 사이트맵 제출과 실제 수집/색인 분리.
-- [IndexNow 공식 문서](https://www.indexnow.org/documentation): 키·대상URL·지원 경로 확인 후 검토.
-- [GeoNames 도시 원천](https://download.geonames.org/export/dump/cities15000.zip): 기존 CC BY4.0 데이터 출처이며 모든 도시 목록을 뜻하지 않음.
+- [일본입국기록양식](https://www.moj.go.jp/isa/content/930002136.pdf)
+- [Visit Japan Web 공식안내](https://www.digital.go.jp/en/services/visit_japan_web-en)
+- [실제공식제출](https://www.vjw.digital.go.jp/main/)
+- [일본세관입국자안내](https://www.customs.go.jp/english/summary/passenger.htm)
+- [Google noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
+- [Google sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [IndexNow](https://www.indexnow.org/documentation)
+- [GeoNames도시원천](https://download.geonames.org/export/dump/cities15000.zip):기존CC BY4.0범위,모든도시목록아님.
 
-## 재개 입력을 한 번에 받을 항목
+## 현재값 없는 조건 처리
 
-1. 오류 신고에 사용할 기존 공개 이메일/접수 경로.
-2. 현재 분석 서비스 유지 여부와 실제 기존 설정 접근 범위. 미확인 계정이 있으면 연결을 새로 만들기 전에 확인.
-3. 정기 점검 주기·한국시간 실행 시각·의미 있는 변화만 알릴지 여부.
-4. 외부 게시를 원하는 경우에만 실제 채널·게시 범위·초안 승인 여부.
+연락처없음은이미답변된조건이므로반복요청하지않는다. 일정/분석/외부게시조건이필수인해당단계만대기하며여행기술·UI·공식근거·탐색검사는계속한다. 빈값에가짜연락처·일정·수신성공·유입을채워완료처리하지않는다.
 
-제공되지 않은 값은 빈 상태로 유지한다. 증거 없는 연락처·유입·일정·수신 성공을 만들어 완료 처리하지 않는다. 준비 작업의 완료를 실제 운영 설정 완료로 바꾸지 않는다.
+## 과거 실행 오류 이력
+
+이전건강22글검수·metadata/alt개선·19홍보준비는현재여행작업으로확대한오류였다. 과거증거는보존하되현재작업목록에서제외한다. 이번정정은복구/재게시/건강주장수정승인이아니다. 실제삭제증거를무효화하거나재삭제하지않는다. GUI·배포·commit·95원장상태/숫자수정없음.
