@@ -439,9 +439,9 @@
       "candidate": "수집 정확성",
       "eligible": true,
       "status": "DEFERRED",
-      "evidence": "docs/travel-final-execution-20261010.md",
+      "evidence": "docs/analytics-setup-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "현재 Blogger GA계정 번호를측정ID로사용한오설정 확인. 계정의웹스트림은다른Tistory주소. 잘못된홈include차단, LandReady전용스트림 및 실제수신 미확보."
+      "note": "LandReady 홈 전용 스트림 생성·실제 수신·단일 페이지뷰·운영자 브라우저 제외/복구 확인. 장기 결측/지연 및 재방문 해석 검증은 표본 축적 대기. 다른 사이트 표본 재사용 금지."
     },
     {
       "id": "C46",
@@ -604,10 +604,11 @@
       "id": "C62",
       "candidate": "정기 점검",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/manual-review-runbook.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "사용자가 정기 실행 없이 수동 점검 선택. 수동 절차·한도·복구와 첫 실제 공개/분석/검색 점검 증거 연결. 예약자동화 미생성은 사용자 선택이며 장기 운영 성공을 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C63",
@@ -879,9 +880,9 @@
       "candidate": "이용 측정 정확성",
       "eligible": true,
       "status": "DEFERRED",
-      "evidence": "docs/travel-final-execution-20261010.md",
+      "evidence": "docs/analytics-setup-progress-20261010.md",
       "runtimeVerified": false,
-      "note": "C45동일. 다른사이트분석표본 재사용금지. 페이지메모리집계와실제분석수신/고유방문자/재방문을분리."
+      "note": "LandReady 홈 전용 스트림 생성·실제 수신·단일 페이지뷰·운영자 브라우저 제외/복구 확인. 장기 결측/지연 및 재방문 해석 검증은 표본 축적 대기. 다른 사이트 표본 재사용 금지."
     },
     {
       "id": "H28",
@@ -924,10 +925,11 @@
       "id": "H32",
       "candidate": "정기 점검·자동화",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/manual-review-runbook.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "사용자가 정기 실행 없이 수동 점검 선택. 수동 절차·한도·복구와 첫 실제 공개/분석/검색 점검 증거 연결. 예약자동화 미생성은 사용자 선택이며 장기 운영 성공을 뜻하지 않음.",
+      "implementationVerified": true
     }
   ]
 }
