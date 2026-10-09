@@ -43,3 +43,15 @@ UI 변경 시 PC 및 360/390px 실제 렌더링, 넘침, 키보드·터치·포�
 공식 기준: https://developers.google.com/search/docs/crawling-indexing/block-indexing · https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap · https://www.indexnow.org/documentation
 
 개정 이력: 2026-10-10 최초 적용 원장·운영 기준·작성 도구 메타정보·제한된 공개 점검 추가.
+
+## 후속 적용 실행
+
+`npm run audit:inventory`: Blogger 공개 게시글 피드(최대 150개)와 사이트맵을 비교한다. 피드 총수보다 수집 수가 적으면 PARTIAL이며 전체 검산 완료가 아니다. 게시글 URL·중복·누락·수정일을 검사한다. 피드의 밀리초와 사이트맵의 초 단위 표시는 같은 시각으로 정규화한다. 정적 페이지는 이 게시글 검사의 범위 밖이다.
+
+`npm run review:sources`: `data/review-sources.json`의 공식 원천 3개를 각 20초 제한·10MiB 결과 제한·자동 재시도 없이 조회한다. 결과는 `local-data/source-review/`의 시각별 이력 및 최신 상태에 저장한다. 변경 시 새 검토가 필요하고 조회 실패 시 마지막 성공 해시와 기존 점검 예정일을 보존한다. 새 내용이 승인 데이터나 규정 판정으로 자동 배포되지 않는다.
+
+`npm run build`는 생성 후 267개 자산 해시·참조 경로·양식 이미지 실제 크기·alt·14개 항목을 검사한다. 기존 CI의 build 단계에도 적용된다. 외부 네트워크 점검은 CI 완료조건으로 강제하지 않는다.
+
+작성 도구의 행동 기록은 페이지 메모리에서만 집계된다. `copy_success`는 클립보드 쓰기 성공 이후 항목 ID만 기록하고, `official_link_click`은 Visit Japan Web 링크 클릭만 기록한다. 입력 내용·개인정보·URL·사용자 식별자는 기록하지 않는다. 새로고침 시 집계가 초기화되며 분석 서버, 고유 방문자, 재방문, 검색 유입 측정의 대체물이 아니다. 공유나 실제 제출 완료 이벤트를 생성하지 않는다.
+
+현재 검색 관리 상태와 후속 검증은 `operations-followup-20261010.md`, `data/search-status.json`에 기록한다. 보안문자 승인이 필요한 네이버 단계와 Bing 제공자 인증 오류는 각 서비스 범위의 미완료로 남긴다.

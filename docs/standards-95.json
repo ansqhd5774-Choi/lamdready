@@ -89,10 +89,11 @@
       "id": "C10",
       "candidate": "출처 구분",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
+      "implementationVerified": true
     },
     {
       "id": "C11",
@@ -144,65 +145,69 @@
       "id": "C16",
       "candidate": "날짜 일관성",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
+      "implementationVerified": true
     },
     {
       "id": "C17",
       "candidate": "재검토 관리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
+      "implementationVerified": true
     },
     {
       "id": "C18",
       "candidate": "출처 변경 감지",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "scripts/audit-public.mjs",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
       "implementationVerified": true
     },
     {
       "id": "C19",
       "candidate": "사이트맵 날짜",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "src/public-inventory.js; scripts/audit-inventory.mjs; artifacts/inventory-audit.json",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공개 게시글 22개와 사이트맵 22개 대조 통과. 정적 페이지·전체 본문 링크 검사는 범위 밖",
+      "implementationVerified": true
     },
     {
       "id": "C20",
       "candidate": "Google Search Console",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 주소 Google 소유 확인·사이트맵 1회 제출 완료. 가져올 수 없음 및 데이터 처리 중 상태를 분리 기록. 실제 색인·노출 미확인",
+      "implementationVerified": true
     },
     {
       "id": "C21",
       "candidate": "NAVER Search Advisor",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "WAITING_USER",
+      "evidence": "data/search-status.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 도메인 네이버 인증 태그 게시 완료. 보안문자 별도 승인 대기; 소유 확인과 사이트맵 제출 미완료"
     },
     {
       "id": "C22",
       "candidate": "Bing Webmaster Tools",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "PROVIDER_VERIFICATION_ERROR",
+      "evidence": "data/search-status.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "Bing 공개 인증 태그 게시 완료. 제공자 인증 오류로 소유 확인 미완료, 실제 등록 유지 상태 UNKNOWN. 다른 작업을 막지 않음"
     },
     {
       "id": "C23",
@@ -217,10 +222,11 @@
       "id": "C24",
       "candidate": "검색 상태 분리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 주소 Google 소유 확인·사이트맵 1회 제출 완료. 가져올 수 없음 및 데이터 처리 중 상태를 분리 기록. 실제 색인·노출 미확인",
+      "implementationVerified": true
     },
     {
       "id": "C25",
@@ -255,10 +261,11 @@
       "id": "C28",
       "candidate": "사이트맵 검산",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "src/public-inventory.js; scripts/audit-inventory.mjs; artifacts/inventory-audit.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "공개 게시글 22개와 사이트맵 22개 대조 통과. 정적 페이지·전체 본문 링크 검사는 범위 밖",
+      "implementationVerified": true
     },
     {
       "id": "C29",
@@ -420,19 +427,21 @@
       "id": "C46",
       "candidate": "행동 지표",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "theme/entry-events.js; test/action-events.test.js; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "실제 복사 성공·공식 링크 클릭 별도 집계와 개인정보 배제 검증. 페이지 메모리만 사용하며 외부 분석·재방문·공유·제출 성공은 미구현",
+      "implementationVerified": true
     },
     {
       "id": "C47",
       "candidate": "개인정보 보호",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "theme/entry-events.js; test/action-events.test.js; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "실제 복사 성공·공식 링크 클릭 별도 집계와 개인정보 배제 검증. 페이지 메모리만 사용하며 외부 분석·재방문·공유·제출 성공은 미구현",
+      "implementationVerified": true
     },
     {
       "id": "C48",
@@ -501,10 +510,11 @@
       "id": "C55",
       "candidate": "검증 증거",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "scripts/check-assets.mjs; package.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 Blogger 원본 백업·최소 인증 태그 변경·공개 확인. 267개 자산 및 14개 항목 CI 회귀 검사 연결. 모든 운영 단계 검증을 대체하지 않음",
+      "implementationVerified": true
     },
     {
       "id": "C56",
@@ -528,19 +538,21 @@
       "id": "C58",
       "candidate": "변경 보호",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "scripts/check-assets.mjs; package.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 Blogger 원본 백업·최소 인증 태그 변경·공개 확인. 267개 자산 및 14개 항목 CI 회귀 검사 연결. 모든 운영 단계 검증을 대체하지 않음",
+      "implementationVerified": true
     },
     {
       "id": "C59",
       "candidate": "자동 회귀 검사",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "scripts/check-assets.mjs; package.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 Blogger 원본 백업·최소 인증 태그 변경·공개 확인. 267개 자산 및 14개 항목 CI 회귀 검사 연결. 모든 운영 단계 검증을 대체하지 않음",
+      "implementationVerified": true
     },
     {
       "id": "C60",
@@ -627,19 +639,21 @@
       "id": "H6",
       "candidate": "날짜 관리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
+      "implementationVerified": true
     },
     {
       "id": "H7",
       "candidate": "근거 재검토 관리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
+      "implementationVerified": true
     },
     {
       "id": "H8",
@@ -655,46 +669,48 @@
       "candidate": "출처 변경·조회 실패 처리",
       "eligible": true,
       "status": "IMPLEMENTED_SCOPED",
-      "evidence": "scripts/audit-public.mjs",
+      "evidence": "data/review-sources.json; scripts/review-sources.mjs; test/source-review.test.js",
       "runtimeVerified": false,
-      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "note": "공식 원천 3개 분류·조회 이력·다음 검토일·해시 변경 후보·실패 시 기준값 보존 구현. 실제 내용 검수는 미완료",
       "implementationVerified": true
     },
     {
       "id": "H10",
       "candidate": "글별 색인 관리",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 주소 Google 소유 확인·사이트맵 1회 제출 완료. 가져올 수 없음 및 데이터 처리 중 상태를 분리 기록. 실제 색인·노출 미확인",
+      "implementationVerified": true
     },
     {
       "id": "H11",
       "candidate": "Google 검색 관리",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "data/search-status.json; docs/operations-followup-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 주소 Google 소유 확인·사이트맵 1회 제출 완료. 가져올 수 없음 및 데이터 처리 중 상태를 분리 기록. 실제 색인·노출 미확인",
+      "implementationVerified": true
     },
     {
       "id": "H12",
       "candidate": "네이버 검색 관리",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "WAITING_USER",
+      "evidence": "data/search-status.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 도메인 네이버 인증 태그 게시 완료. 보안문자 별도 승인 대기; 소유 확인과 사이트맵 제출 미완료"
     },
     {
       "id": "H13",
       "candidate": "Bing 검색 관리",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "PROVIDER_VERIFICATION_ERROR",
+      "evidence": "data/search-status.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "Bing 공개 인증 태그 게시 완료. 제공자 인증 오류로 소유 확인 미완료, 실제 등록 유지 상태 UNKNOWN. 다른 작업을 막지 않음"
     },
     {
       "id": "H14",
@@ -709,10 +725,11 @@
       "id": "H15",
       "candidate": "사이트맵 검산",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "src/public-inventory.js; scripts/audit-inventory.mjs; artifacts/inventory-audit.json",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "공개 게시글 22개와 사이트맵 22개 대조 통과. 정적 페이지·전체 본문 링크 검사는 범위 밖",
+      "implementationVerified": true
     },
     {
       "id": "H16",

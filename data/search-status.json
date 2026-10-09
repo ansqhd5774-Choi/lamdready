@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-10",
+  "site": "https://landready.blogspot.com/",
+  "google": {
+    "ownership": "VERIFIED_AUTO_AFFILIATED_PRODUCT",
+    "sitemapSubmitted": "CONFIRMED_ONCE",
+    "sitemapFetch": "COULD_NOT_FETCH",
+    "sitemapDiscoveredPages": 0,
+    "crawl": "UNVERIFIED",
+    "index": "PROCESSING_NO_DATA",
+    "impressions": "UNVERIFIED",
+    "visits": "UNVERIFIED",
+    "evidence": "artifacts/gsc-landready-sitemap.png"
+  },
+  "naver": {
+    "publicVerificationTag": "CONFIRMED",
+    "ownership": "WAITING_USER_CAPTCHA_APPROVAL",
+    "sitemapSubmitted": "NOT_SUBMITTED_CURRENT_DOMAIN",
+    "crawl": "UNVERIFIED",
+    "index": "UNVERIFIED",
+    "evidence": "Blogger save + public DOM; Search Advisor CAPTCHA dialog"
+  },
+  "bing": {
+    "publicVerificationTag": "CONFIRMED",
+    "ownership": "PROVIDER_VERIFICATION_ERROR",
+    "registration": "STATE_UNKNOWN",
+    "sitemapSubmitted": "NOT_SUBMITTED_CURRENT_DOMAIN",
+    "index": "UNVERIFIED",
+    "evidence": "artifacts/bing-landready-verification-error.png"
+  },
+  "indexNow": {
+    "status": "DEFERRED_PLATFORM_REVIEW",
+    "reason": "Blogger root key file ownership path unavailable; no API key hosted and no notification sent. Worker personal preparation route intentionally noindex."
+  }
+}
