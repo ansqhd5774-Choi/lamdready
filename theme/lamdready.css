@@ -129,3 +129,6 @@
 #lr-app .jp-translation-cell output{padding:10px 30px}
 #lr-app .jp-copy-button{width:32px}
 #lr-app .jp-split-editor .jp-split-box input{text-align:center}
+#lr-app .jp-split-box{direction:ltr}
+#lr-app .jp-split-box>input{grid-column:1;grid-row:1}
+#lr-app .jp-split-box>.jp-translation-cell{grid-column:2;grid-row:1;border-right:0;border-left:1px solid #ccdddf}
