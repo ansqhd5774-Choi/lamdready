@@ -137,3 +137,18 @@
 #lr-app .jp-card-photo>a{display:block;position:relative;aspect-ratio:1300/755;overflow:hidden;border-radius:0}
 #lr-app .jp-card-photo>a>img{position:absolute;max-width:none;width:129.5384615%;height:auto;left:-13.8461538%;top:-27.1523179%;margin:0}
 #lr-app .jp-card-photo .jp-number-overlay{position:absolute;inset:0;width:100%;height:100%}
+
+#lr-app .jp-complete-card{border-left:3px solid var(--field-color)}
+#lr-app .jp-complete-card .jp-item-number{background:var(--field-color);color:#fff}
+#lr-app .jp-all-editor select,#lr-app .jp-all-editor textarea{display:block;grid-row:1;grid-column:1;width:100%;min-width:0;border:0;background:transparent;color:#183c45;font:700 14px/20px 'Segoe UI','Malgun Gothic',sans-serif;text-align:center;min-height:48px;padding:10px 8px;resize:vertical}
+#lr-app .jp-all-editor select:focus,#lr-app .jp-all-editor textarea:focus{outline:0;background:#fff}
+#lr-app .jp-all-editor .jp-translation-cell output{padding:10px 28px;white-space:pre-wrap;font-size:13px;line-height:20px}
+#lr-app .jp-field-tip,#lr-app .jp-field-status{font-size:12px;line-height:18px;margin:6px 0 0;color:#526e74;flex-basis:100%}
+#lr-app .jp-field-status{color:#a34230}
+#lr-app .jp-purpose-other{margin:8px 0 0;width:100%;height:44px;font-size:14px}
+#lr-app .jp-purpose-other[hidden],#lr-app .jp-field-status[hidden]{display:none}
+#lr-app .jp-complete-card .jp-inline-editor{margin-left:-34px;width:calc(100% + 34px)}
+#lr-app .jp-complete-card .jp-split-box{min-height:48px}
+#lr-app .jp-complete-card .jp-title-example{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#lr-app .jp-actions{justify-content:flex-end;margin:12px 0}
+@media(max-width:600px){#lr-app .jp-actions{align-items:flex-end}#lr-app .jp-all-editor .jp-split-box:has(textarea){grid-template-columns:1fr}#lr-app .jp-all-editor .jp-split-box:has(textarea)>.jp-translation-cell{grid-column:1;grid-row:2;border-left:0;border-top:1px solid #ccdddf}}
