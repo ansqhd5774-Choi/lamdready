@@ -16,7 +16,7 @@
       const go=document.getElementById('lr-continue');if(go)go.setAttribute('aria-label',labels[code][5]);
       document.querySelectorAll('[data-lr-text]').forEach(el=>el.textContent=labels[code][Number(el.dataset.lrText)]);
       const back=document.querySelector('.lr-trip-back');if(back){const name=({ko:'뒤로 가기',en:'Back',zh:'返回',de:'Zurück',fr:'Retour'})[code];back.setAttribute('aria-label',name);back.setAttribute('title',name);}
-      const prep=document.querySelector('.lr-preparation');if(prep){const names=new Intl.DisplayNames([code],{type:'region'});const q=new URL(location.href).searchParams;const dest=names.of(q.get('destination'));prep.querySelector('h1').textContent=dest+' · '+labels[code][7];prep.querySelector('.lr-route-summary').textContent=names.of(q.get('origin'))+' → '+dest;document.title=dest+' · '+labels[code][7]+' · LandReady';}
+      const prep=document.querySelector('.lr-preparation');if(prep){const names=new Intl.DisplayNames([code],{type:'region'});const q=new URL(location.href).searchParams;const dest=names.of(q.get('destination'));const heading=prep.querySelector('h1');if(heading)heading.textContent=dest+' · '+labels[code][7];const route=prep.querySelector('.lr-route-summary');if(route)route.textContent=names.of(q.get('origin'))+' → '+dest+' ('+q.get('origin')+' → '+q.get('destination')+')';document.title=dest+' · '+labels[code][7]+' · LandReady';}
       document.dispatchEvent(new CustomEvent('lr-language',{detail:code}));
     }apply(lang);
   }
