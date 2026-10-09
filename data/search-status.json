@@ -8,18 +8,21 @@
     "sitemapDiscoveredPages": 0,
     "crawl": "UNVERIFIED",
     "index": "PROCESSING_NO_DATA",
-    "impressions": "UNVERIFIED",
-    "visits": "UNVERIFIED",
-    "evidence": "artifacts/gsc-landready-sitemap.png"
+    "impressions": "PROCESSING_NO_DATA",
+    "visits": "PROCESSING_NO_DATA",
+    "evidence": "artifacts/gsc-landready-sitemap.png",
+    "performancePeriod": "3 months",
+    "currentEvidence": "artifacts/gsc-current-performance-20261010.png"
   },
   "naver": {
     "publicVerificationTag": "CONFIRMED",
     "ownership": "VERIFIED_MANUAL_STATE_CONFIRMED",
     "sitemapSubmitted": "CONFIRMED_ONCE",
-    "crawl": "UNVERIFIED",
-    "index": "UNVERIFIED",
+    "crawl": "NO_REPORT_DATA",
+    "index": "NO_REPORT_DATA",
     "evidence": "artifacts/naver-landready-sitemap.png; current site management accessible; no crawl/index report data",
-    "sitemapRegisteredAt": "26.10.10 03:08:13 (provider display)"
+    "sitemapRegisteredAt": "26.10.10 03:08:13 (provider display)",
+    "impressions": "NO_REPORT_DATA"
   },
   "bing": {
     "publicVerificationTag": "CONFIRMED",
@@ -31,7 +34,7 @@
     "registrationEvidence": "artifacts/bing-landready-registered-unverified.png; existing site list Not verified"
   },
   "indexNow": {
-    "status": "DEFERRED_PLATFORM_REVIEW",
-    "reason": "Blogger root key file ownership path unavailable; no API key hosted and no notification sent. Worker personal preparation route intentionally noindex."
+    "status": "REVIEW_COMPLETE_NOT_APPLIED",
+    "reason": "Same-host alternate keyLocation is permitted; no valid Blogger-hosted UTF-8 key file path is available. Worker preparation route remains intentionally noindex. No notification sent."
   }
 }

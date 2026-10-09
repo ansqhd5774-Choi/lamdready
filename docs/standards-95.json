@@ -8,28 +8,31 @@
       "id": "C1",
       "candidate": "검색 의도 확정",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 여행 경로와 일본14항목 입력·변환·복사·공식 제출 안내, 실제 경로 이동 및 기존14항목Runtime 검증.",
+      "implementationVerified": true
     },
     {
       "id": "C2",
       "candidate": "핵심 정보 우선",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 여행 경로와 일본14항목 입력·변환·복사·공식 제출 안내, 실제 경로 이동 및 기존14항목Runtime 검증.",
+      "implementationVerified": true
     },
     {
       "id": "C3",
       "candidate": "기존 글 수정 우선",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "기존 여행 URL을 수정하고 새 중복 준비 페이지를 만들지 않은 코드·배포 이력. 장기 전체 중복 콘텐츠 운영 완료 아님.",
+      "implementationVerified": true
     },
     {
       "id": "C4",
@@ -44,37 +47,41 @@
       "id": "C5",
       "candidate": "실용 정보",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 여행 경로와 일본14항목 입력·변환·복사·공식 제출 안내, 실제 경로 이동 및 기존14항목Runtime 검증.",
+      "implementationVerified": true
     },
     {
       "id": "C6",
       "candidate": "관련 글 연결",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 경로 선택·폼 복귀·입국/세관/안전 공식 안내 연결. 신규 허브 페이지를 강제하지 않는 현재 탐색 범위.",
+      "implementationVerified": true
     },
     {
       "id": "C7",
       "candidate": "주제별 허브",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 경로 선택·폼 복귀·입국/세관/안전 공식 안내 연결. 신규 허브 페이지를 강제하지 않는 현재 탐색 범위.",
+      "implementationVerified": true
     },
     {
       "id": "C8",
       "candidate": "근거 추적",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "C9",
@@ -109,28 +116,31 @@
       "id": "C12",
       "candidate": "적용 대상",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "C13",
       "candidate": "보상·만료 근거",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "C14",
       "candidate": "근거 충돌 처리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "C15",
@@ -206,18 +216,19 @@
       "candidate": "Bing Webmaster Tools",
       "eligible": true,
       "status": "PROVIDER_VERIFICATION_ERROR",
-      "evidence": "data/search-status.json",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "Bing 공개 인증 태그 게시 완료. 제공자 인증 오류로 소유 확인 미완료, 실제 등록 유지 상태 UNKNOWN. 다른 작업을 막지 않음"
+      "note": "기존Bing등록유지·Not verified 확인. 제공자인증오류후새조건없어반복인증/중복등록하지않음. 소유확인·사이트맵대기."
     },
     {
       "id": "C23",
       "candidate": "IndexNow 검토",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "IndexNow 검토 완료: 동일호스트 다른 keyLocation 허용, Blogger 유효키 파일 제공경로 미확보로 미적용. noindex도구를 대체색인하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C24",
@@ -331,37 +342,40 @@
       "id": "C35",
       "candidate": "URL 변경 보호",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "DEFERRED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "사용자가 이전 lamdready 이름/서비스 삭제를 명시 지시. 새 현재주소/내부링크는 정상이나 폐기주소 외부공유까지 유지한다고 보장하지 않음. 이전서비스 재생성 금지."
     },
     {
       "id": "C36",
       "candidate": "이미지 최적화",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 여행 이미지 alt/치수/앞뒷면 실제 디코딩·lazy 확인, 20자산/문서요청 PASS. 홈 숨김 legacy 위젯 출력 제한. 전체 권리 감사와 공급자 기본 스크립트 제거 완료 아님.",
+      "implementationVerified": true
     },
     {
       "id": "C37",
       "candidate": "초기 로딩",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 여행 이미지 alt/치수/앞뒷면 실제 디코딩·lazy 확인, 20자산/문서요청 PASS. 홈 숨김 legacy 위젯 출력 제한. 전체 권리 감사와 공급자 기본 스크립트 제거 완료 아님.",
+      "implementationVerified": true
     },
     {
       "id": "C38",
       "candidate": "성능 측정",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "scripts/audit-performance.mjs; artifacts/performance-audit.json",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "정적 공개 자산 용량·로딩 인벤토리 추가. 실제 모바일 waterfall·Lighthouse·CWV 미측정이므로 DEFERRED 유지."
+      "note": "현재 홈13/폼20응답 브라우저 관찰,320/360/390/768/1280넘침없음·홈입력방해없음·날짜273px·Tab 수정. 실사용CWV/실제200%확대/전체WCAG는 별도.",
+      "implementationVerified": true
     },
     {
       "id": "C39",
@@ -386,10 +400,11 @@
       "id": "C41",
       "candidate": "방해 요소",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 홈13/폼20응답 브라우저 관찰,320/360/390/768/1280넘침없음·홈입력방해없음·날짜273px·Tab 수정. 실사용CWV/실제200%확대/전체WCAG는 별도.",
+      "implementationVerified": true
     },
     {
       "id": "C42",
@@ -423,9 +438,9 @@
       "candidate": "수집 정확성",
       "eligible": true,
       "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "현재 Blogger GA계정 번호를측정ID로사용한오설정 확인. 계정의웹스트림은다른Tistory주소. 잘못된홈include차단, LandReady전용스트림 및 실제수신 미확보."
     },
     {
       "id": "C46",
@@ -451,19 +466,21 @@
       "id": "C48",
       "candidate": "UTM 규칙",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "채널/매체 고정쌍과 비개인 UTM·국가경로 보존 생성기, fixture PASS. 외부 게시와 실제 유입 수신은 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "C49",
       "candidate": "콘텐츠 재활용",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "실제 준비 기능에 기반한 여행 홍보 요약1개와 원문·공식 제출 구분. 홍보 준비 범위이며 게시0회.",
+      "implementationVerified": true
     },
     {
       "id": "C50",
@@ -478,10 +495,10 @@
       "id": "C51",
       "candidate": "저성과 페이지 판단",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "DEFERRED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 여행 공개 게시글0개라 저성과 선정 대상 없음. 유입만으로 삭제하지 않는 기준 유지; 사용자명시 건강글삭제를 저성과 삭제로 바꾸지 않음."
     },
     {
       "id": "C52",
@@ -595,19 +612,21 @@
       "id": "C63",
       "candidate": "기준의 근거",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식근거 링크·확인일·자체정책 구분·개정 이력 매핑 완료. 참고 링크 전체 조항 최신검수 또는 전체 규정 승인 아님.",
+      "implementationVerified": true
     },
     {
       "id": "H1",
       "candidate": "검색 의도·제목 일치",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 여행 경로와 일본14항목 입력·변환·복사·공식 제출 안내, 실제 경로 이동 및 기존14항목Runtime 검증.",
+      "implementationVerified": true
     },
     {
       "id": "H2",
@@ -622,28 +641,31 @@
       "id": "H3",
       "candidate": "중복 콘텐츠 관리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "기존 여행 URL을 수정하고 새 중복 준비 페이지를 만들지 않은 코드·배포 이력. 장기 전체 중복 콘텐츠 운영 완료 아님.",
+      "implementationVerified": true
     },
     {
       "id": "H4",
       "candidate": "근거 추적",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "H5",
       "candidate": "근거 충돌 처리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "H6",
@@ -669,10 +691,11 @@
       "id": "H8",
       "candidate": "갱신 우선순위",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "공식3원문과1~14항목 적용대상·수치/변환한계·불확실성·앞뒤 조건 차이·수정우선순위 연결. 비자·개인별 입국·반입 판단 미실행.",
+      "implementationVerified": true
     },
     {
       "id": "H9",
@@ -718,18 +741,19 @@
       "candidate": "Bing 검색 관리",
       "eligible": true,
       "status": "PROVIDER_VERIFICATION_ERROR",
-      "evidence": "data/search-status.json",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "Bing 공개 인증 태그 게시 완료. 제공자 인증 오류로 소유 확인 미완료, 실제 등록 유지 상태 UNKNOWN. 다른 작업을 막지 않음"
+      "note": "C22동일: 등록유지미인증;제공자오류대기."
     },
     {
       "id": "H14",
       "candidate": "IndexNow 연동 검토",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "IndexNow 검토 완료: 동일호스트 다른 keyLocation 허용, Blogger 유효키 파일 제공경로 미확보로 미적용. noindex도구를 대체색인하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "H15",
@@ -772,19 +796,21 @@
       "id": "H19",
       "candidate": "카테고리 허브",
       "eligible": true,
-      "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "홈 경로 선택·폼 복귀·입국/세관/안전 공식 안내 연결. 신규 허브 페이지를 강제하지 않는 현재 탐색 범위.",
+      "implementationVerified": true
     },
     {
       "id": "H20",
       "candidate": "관련 콘텐츠 연결",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "홈 경로 선택·폼 복귀·입국/세관/안전 공식 안내 연결. 신규 허브 페이지를 강제하지 않는 현재 탐색 범위.",
+      "implementationVerified": true
     },
     {
       "id": "H21",
@@ -820,37 +846,40 @@
       "id": "H24",
       "candidate": "이미지 품질",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 여행 이미지 alt/치수/앞뒷면 실제 디코딩·lazy 확인, 20자산/문서요청 PASS. 홈 숨김 legacy 위젯 출력 제한. 전체 권리 감사와 공급자 기본 스크립트 제거 완료 아님.",
+      "implementationVerified": true
     },
     {
       "id": "H25",
       "candidate": "모바일·성능·접근성",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 홈13/폼20응답 브라우저 관찰,320/360/390/768/1280넘침없음·홈입력방해없음·날짜273px·Tab 수정. 실사용CWV/실제200%확대/전체WCAG는 별도.",
+      "implementationVerified": true
     },
     {
       "id": "H26",
       "candidate": "운영 신뢰 정보",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 공개 양식 출처·가공표시·개인입력비전송·공식준비/제출구분 및 근거검수 문서. 오류 신고 수단은 연락처 없음으로 C60대기.",
+      "implementationVerified": true
     },
     {
       "id": "H27",
       "candidate": "이용 측정 정확성",
       "eligible": true,
       "status": "DEFERRED",
-      "evidence": "docs/site-operations.md",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+      "note": "C45동일. 다른사이트분석표본 재사용금지. 페이지메모리집계와실제분석수신/고유방문자/재방문을분리."
     },
     {
       "id": "H28",
@@ -874,10 +903,10 @@
       "id": "H30",
       "candidate": "저성과·오래된 글 처리",
       "eligible": true,
-      "status": "STANDARD_DEFINED",
-      "evidence": "docs/site-operations.md",
+      "status": "DEFERRED",
+      "evidence": "docs/travel-final-execution-20261010.md",
       "runtimeVerified": false,
-      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+      "note": "현재 여행 공개 게시글0개. 저성과·오래된 글 검토 대상 없음. 삭제 건강글 복구/수정/홍보 금지."
     },
     {
       "id": "H31",

@@ -24,6 +24,8 @@
 
 채널확정후기존lang/origin/destination query를보존하고URLSearchParams로UTM만추가한다. canonical은UTM이나개인입력값을포함하지않는다. 공식Visit Japan Web 링크에자체홍보UTM을붙이지않는다. 링크생성은실제유입수집성공아님.
 
+생성기는 `src/promotion-link.js`의 `promotionLink({source,medium})`다. 알려진 채널/매체 쌍만 허용하고 임의 이메일·식별정보·paid 태그를 거절한다. 반환은 URL 준비 결과이며 해당 채널 게시 승인을 뜻하지 않는다. fixture 검사는 완료했지만 현재 게시0회·실제 수신 미확보 상태는 유지한다.
+
 게시원장필드:draft_id/original_url/channel/utm_source/utm_medium/utm_campaign/utm_content/permission_scope/posted_at/posted_url/public_check/visits_measurement_state. 게시전중복확인, 실패시실제게시상태먼저읽고무조건재전송금지. 새유료홍보예산0.
 
 ## 과거 오류 이력

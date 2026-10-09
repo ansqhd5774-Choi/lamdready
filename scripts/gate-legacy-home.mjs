@@ -10,6 +10,9 @@ if(xml.split(start).length!==2||xml.split(end).length!==2)throw Error('LEGACY_BO
 const ads=/<script\b[^>]*src='https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^']*'[^>]*\/>/g;
 if([...xml.matchAll(ads)].length!==1)throw Error('HEAD_AD_BOUNDARY_AMBIGUOUS');
 xml=xml.replace(ads,tag=>"<b:if cond='data:blog.url != data:blog.homepageUrl'>"+tag+'</b:if>');
+const analytics="<b:include data='blog' name='google-analytics'/>";
+if(xml.split(analytics).length!==2)throw Error('ANALYTICS_BOUNDARY_AMBIGUOUS');
+xml=xml.replace(analytics,"<b:if cond='data:blog.url != data:blog.homepageUrl'>"+analytics+'</b:if>');
 xml=xml.replace(start,"<!-- lr-legacy-home-gate: preserve legacy widgets outside travel home -->\n<b:if cond='data:blog.url != data:blog.homepageUrl'>\n"+start);
 xml=xml.replace(end,'</b:if>\n'+end);
 await fs.writeFile(output,xml);console.log('Legacy home gate prepared; not deployed');
