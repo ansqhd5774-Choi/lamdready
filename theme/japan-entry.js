@@ -20,7 +20,7 @@
  for(const key of ['surname','given']){
   const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
   const sync=()=>{if(field)field.value=result.value;};
-  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 오른쪽에 입력하세요.':'여권의 영문 표기와 일치하는지 확인하세요.';help.hidden=!v;};
+  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 오른쪽에 입력하세요.':'';help.hidden=!v||!!result.value;};
   controls[key]={source,result,convert};
   const copy=document.querySelector('[data-copy="'+key+'"]');
   const updateCopy=()=>{copy.disabled=!result.value;};
@@ -36,6 +36,7 @@
    convert();
   };
   source.addEventListener('input',e=>{if(!e.isComposing)update();});source.addEventListener('compositionend',update);source.addEventListener('blur',update);
+  source.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing&&e.keyCode!==229){e.preventDefault();update();if(key==='surname'){controls.given.source.focus();controls.given.source.setSelectionRange(controls.given.source.value.length,controls.given.source.value.length);}}});
 field?.addEventListener('input',()=>{result.value=field.value;});
   document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.hidden=true;});
   help.hidden=true;
