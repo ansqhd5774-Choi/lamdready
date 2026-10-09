@@ -34,3 +34,13 @@
 #lr-app .jp-surname-editor input{display:block;box-sizing:border-box;width:100%;min-width:0;min-height:48px;padding:12px 14px;border:1px solid #ccdddf;border-radius:10px;background:#f8fbfb;color:#183c45;font:700 16px/1.5 'Segoe UI','Malgun Gothic',sans-serif;}
 #lr-app .jp-surname-editor input:focus{outline:2px solid #3b8592;outline-offset:2px;background:#fff}
 #lr-app .jp-surname-editor .jp-conversion-help{margin-top:12px;font-size:12px;line-height:1.65;color:#526e74}
+
+/* Compact surname card: keep 48px touch targets. */
+#lr-app .jp-surname-card .jp-item-en,#lr-app .jp-surname-card .jp-item-ko{display:inline;margin:0;line-height:24px}
+#lr-app .jp-surname-card .jp-item-ko{margin-left:8px}
+#lr-app .jp-surname-editor{margin-top:10px;padding-top:10px}
+#lr-app .jp-surname-editor .jp-example{margin-bottom:10px;gap:8px;line-height:20px}
+.jp-surname-editor .jp-example strong{padding:2px 7px}
+.jp-surname-editor label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#lr-app .jp-surname-editor input{height:48px;padding:10px 12px;margin-bottom:8px}
+#lr-app .jp-surname-editor .jp-conversion-help{margin-top:2px;font-size:12px;line-height:18px}

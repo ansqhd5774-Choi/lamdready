@@ -18,9 +18,9 @@
  source.addEventListener('input',()=>{
   const value=source.value.trim().normalize('NFC');
   result.value=names[value]||(/^[a-zA-Z -]+$/.test(value)?value.toUpperCase():'');sync();
-  help.textContent=!value?'한글 성을 입력하면 영문 표기를 제안합니다. 여권의 영문 성과 일치하도록 확인하세요.':result.value?'영문 표기 제안입니다. 여권의 영문 성과 다르면 위 결과를 직접 수정하세요.':'이 성의 영문 표기를 자동으로 정할 수 없습니다. 여권의 영문 성을 직접 입력하세요.';
+  help.textContent=!value?'영문 결과는 여권 표기와 맞춰 수정하세요.':result.value?'영문 결과는 여권 표기와 맞춰 수정하세요.':'자동 변환이 어렵습니다. 여권 영문 성을 입력하세요.';
  });
  result.addEventListener('input',sync);
  if(surname)surname.addEventListener('input',()=>{result.value=surname.value;});
- document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.textContent='한글 성을 입력하면 영문 표기를 제안합니다. 여권의 영문 성과 일치하도록 확인하세요.';});
+ document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.textContent='영문 결과는 여권 표기와 맞춰 수정하세요.';});
 })();
