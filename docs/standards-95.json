@@ -134,10 +134,11 @@
       "id": "C15",
       "candidate": "조회 실패 구분",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "scripts/audit-public.mjs",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C16",
@@ -161,10 +162,11 @@
       "id": "C18",
       "candidate": "출처 변경 감지",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "scripts/audit-public.mjs",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C19",
@@ -224,19 +226,21 @@
       "id": "C25",
       "candidate": "검색 제목·설명",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C26",
       "candidate": "대표 URL",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C27",
@@ -260,10 +264,11 @@
       "id": "C29",
       "candidate": "링크·응답 오류",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "scripts/audit-public.mjs",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C30",
@@ -278,10 +283,11 @@
       "id": "C31",
       "candidate": "구조화 데이터",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C32",
@@ -296,10 +302,11 @@
       "id": "C33",
       "candidate": "공유 미리보기",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "C34",
@@ -647,10 +654,11 @@
       "id": "H9",
       "candidate": "출처 변경·조회 실패 처리",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "scripts/audit-public.mjs",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "H10",
@@ -755,28 +763,31 @@
       "id": "H21",
       "candidate": "검색용 제목·설명",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "H22",
       "candidate": "구조화 데이터",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "H23",
       "candidate": "브랜드·공유 표시",
       "eligible": true,
-      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "status": "IMPLEMENTED_SCOPED",
       "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
       "runtimeVerified": false,
-      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+      "note": "이번 구현 범위는 테스트 및 공개 조회 검증 완료. 전체 후보의 모든 운영 결과를 검증했다는 의미는 아님",
+      "implementationVerified": true
     },
     {
       "id": "H24",
