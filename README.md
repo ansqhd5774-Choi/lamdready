@@ -1,5 +1,9 @@
 # LamdReady
 
+## 운영 기준
+
+95개 후보의 적용 원장: [docs/standards-95.json](docs/standards-95.json). 구현·공개 검증과 문서 기준을 구분하며, 세부 원칙은 [docs/site-operations.md](docs/site-operations.md)를 따른다. 제한된 공개 URL 점검은 `npm run audit:public`으로 실행한다.
+
 LamdReady는 여행자 조건에 따라 전 세계 여행 규정을 검색·판정하는 여행 도우미입니다.
 
 현재 단계: Blogger 1차 공개 홈 적용. https://landready.blogspot.com/ 에서 4개 목적지 공식 안내 연결·품목 안내·브라우저 체크리스트를 제공합니다. 실제 국가 규정 자동 판정 데이터는 아직 없습니다.

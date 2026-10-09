@@ -1,0 +1,863 @@
+{
+  "reviewedAt": "2026-10-10",
+  "total": 95,
+  "eligible": 93,
+  "deduplicated": false,
+  "items": [
+    {
+      "id": "C1",
+      "candidate": "검색 의도 확정",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C2",
+      "candidate": "핵심 정보 우선",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C3",
+      "candidate": "기존 글 수정 우선",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C4",
+      "candidate": "유형별 구성",
+      "eligible": false,
+      "status": "EXCLUDED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "쿠폰·건강 전용 글 구성 제외"
+    },
+    {
+      "id": "C5",
+      "candidate": "실용 정보",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C6",
+      "candidate": "관련 글 연결",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C7",
+      "candidate": "주제별 허브",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C8",
+      "candidate": "근거 추적",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C9",
+      "candidate": "변경 이력",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C10",
+      "candidate": "출처 구분",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C11",
+      "candidate": "사용 검증 구분",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C12",
+      "candidate": "적용 대상",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C13",
+      "candidate": "보상·만료 근거",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C14",
+      "candidate": "근거 충돌 처리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C15",
+      "candidate": "조회 실패 구분",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "scripts/audit-public.mjs",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C16",
+      "candidate": "날짜 일관성",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C17",
+      "candidate": "재검토 관리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C18",
+      "candidate": "출처 변경 감지",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "scripts/audit-public.mjs",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C19",
+      "candidate": "사이트맵 날짜",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C20",
+      "candidate": "Google Search Console",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C21",
+      "candidate": "NAVER Search Advisor",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C22",
+      "candidate": "Bing Webmaster Tools",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C23",
+      "candidate": "IndexNow 검토",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C24",
+      "candidate": "검색 상태 분리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C25",
+      "candidate": "검색 제목·설명",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C26",
+      "candidate": "대표 URL",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C27",
+      "candidate": "검색 차단 점검",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C28",
+      "candidate": "사이트맵 검산",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C29",
+      "candidate": "링크·응답 오류",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "scripts/audit-public.mjs",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C30",
+      "candidate": "검색봇 렌더링",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C31",
+      "candidate": "구조화 데이터",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C32",
+      "candidate": "브랜드 표시",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C33",
+      "candidate": "공유 미리보기",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "C34",
+      "candidate": "이미지 정보",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C35",
+      "candidate": "URL 변경 보호",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C36",
+      "candidate": "이미지 최적화",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C37",
+      "candidate": "초기 로딩",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C38",
+      "candidate": "성능 측정",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C39",
+      "candidate": "모바일 가독성",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C40",
+      "candidate": "접근성",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C41",
+      "candidate": "방해 요소",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C42",
+      "candidate": "개선 글 선정",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C43",
+      "candidate": "검색어 반영",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C44",
+      "candidate": "성과 비교",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C45",
+      "candidate": "수집 정확성",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C46",
+      "candidate": "행동 지표",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C47",
+      "candidate": "개인정보 보호",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C48",
+      "candidate": "UTM 규칙",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C49",
+      "candidate": "콘텐츠 재활용",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C50",
+      "candidate": "외부 게시 관리",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C51",
+      "candidate": "저성과 페이지 판단",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C52",
+      "candidate": "완료 판정 분리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C53",
+      "candidate": "실행 역할",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C54",
+      "candidate": "도구·권한 확인",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C55",
+      "candidate": "검증 증거",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C56",
+      "candidate": "중복 방지",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C57",
+      "candidate": "실패 복구",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C58",
+      "candidate": "변경 보호",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C59",
+      "candidate": "자동 회귀 검사",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C60",
+      "candidate": "오류 신고",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C61",
+      "candidate": "비용 제한",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "C62",
+      "candidate": "정기 점검",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "C63",
+      "candidate": "기준의 근거",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H1",
+      "candidate": "검색 의도·제목 일치",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H2",
+      "candidate": "글 유형별 구성",
+      "eligible": false,
+      "status": "EXCLUDED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "쿠폰·건강 전용 글 구성 제외"
+    },
+    {
+      "id": "H3",
+      "candidate": "중복 콘텐츠 관리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H4",
+      "candidate": "근거 추적",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H5",
+      "candidate": "근거 충돌 처리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H6",
+      "candidate": "날짜 관리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H7",
+      "candidate": "근거 재검토 관리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H8",
+      "candidate": "갱신 우선순위",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H9",
+      "candidate": "출처 변경·조회 실패 처리",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "scripts/audit-public.mjs",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "H10",
+      "candidate": "글별 색인 관리",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H11",
+      "candidate": "Google 검색 관리",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H12",
+      "candidate": "네이버 검색 관리",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H13",
+      "candidate": "Bing 검색 관리",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H14",
+      "candidate": "IndexNow 연동 검토",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H15",
+      "candidate": "사이트맵 검산",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H16",
+      "candidate": "대표 URL·검색 차단",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H17",
+      "candidate": "검색봇 렌더링",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H18",
+      "candidate": "전체 링크 도달성",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H19",
+      "candidate": "카테고리 허브",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H20",
+      "candidate": "관련 콘텐츠 연결",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H21",
+      "candidate": "검색용 제목·설명",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "H22",
+      "candidate": "구조화 데이터",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "H23",
+      "candidate": "브랜드·공유 표시",
+      "eligible": true,
+      "status": "IMPLEMENTED_PENDING_PUBLIC_VERIFICATION",
+      "evidence": "worker/trip-metadata.js; test/trip-metadata.test.js",
+      "runtimeVerified": false,
+      "note": "이번 변경 범위에 구현. 전체 사이트 및 외부 계정 검증과 구분"
+    },
+    {
+      "id": "H24",
+      "candidate": "이미지 품질",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H25",
+      "candidate": "모바일·성능·접근성",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H26",
+      "candidate": "운영 신뢰 정보",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H27",
+      "candidate": "이용 측정 정확성",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H28",
+      "candidate": "홍보 실행 기록",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H29",
+      "candidate": "검색 성과별 개선",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    },
+    {
+      "id": "H30",
+      "candidate": "저성과·오래된 글 처리",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H31",
+      "candidate": "실행·완료·복구 기준",
+      "eligible": true,
+      "status": "STANDARD_DEFINED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "운영 원칙 정의 완료. 기능 구현·계정 설정·실행 결과는 별도 증거 필요"
+    },
+    {
+      "id": "H32",
+      "candidate": "정기 점검·자동화",
+      "eligible": true,
+      "status": "DEFERRED",
+      "evidence": "docs/site-operations.md",
+      "runtimeVerified": false,
+      "note": "실제 계정·공개 글 원장·분석 데이터·운영 연락처 또는 별도 실행 설정 필요. 완료 주장 금지"
+    }
+  ]
+}

@@ -9,7 +9,8 @@
     "build": "node scripts/build-assets.mjs",
     "deploy": "wrangler deploy",
     "collect": "node scripts/collect-local.mjs",
-    "runner": "node scripts/run-data.mjs"
+    "runner": "node scripts/run-data.mjs",
+    "audit:public": "node scripts/audit-public.mjs"
   },
   "engines": {
     "node": ">=20"
