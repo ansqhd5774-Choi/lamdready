@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "items": [
+    {"id":"jp-arrival-form","type":"OFFICIAL","url":"https://www.moj.go.jp/isa/content/930002136.pdf","scope":"일본 외국인 입국 기록 양식 앞면·뒷면","reviewPriority":"FORM_CHANGE","reviewIntervalDays":30},
+    {"id":"jp-digital-entry","type":"OFFICIAL","url":"https://www.digital.go.jp/en/services/visit_japan_web-en","scope":"Visit Japan Web 서비스 안내","reviewPriority":"SERVICE_CHANGE","reviewIntervalDays":30},
+    {"id":"jp-customs","type":"OFFICIAL","url":"https://www.customs.go.jp/english/summary/passenger.htm","scope":"일본 입국자 세관 안내","reviewPriority":"SAFETY_OR_CONDITION_CHANGE","reviewIntervalDays":14}
+  ]
+}

@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/lamdready.js",
-    "build": "node scripts/build-assets.mjs",
+    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/lamdready.js && node --check worker/trip-metadata.js && node --check theme/japan-entry.js && node --check theme/japan-fields.js && node --check theme/japan-pickers.js && node --check theme/entry-events.js && node --check scripts/audit-inventory.mjs && node --check scripts/review-sources.mjs",
+    "build": "node scripts/build-assets.mjs && node scripts/check-assets.mjs",
     "deploy": "wrangler deploy",
     "collect": "node scripts/collect-local.mjs",
     "runner": "node scripts/run-data.mjs",
-    "audit:public": "node scripts/audit-public.mjs"
+    "audit:public": "node scripts/audit-public.mjs",
+    "audit:inventory": "node scripts/audit-inventory.mjs",
+    "review:sources": "node scripts/review-sources.mjs"
   },
   "engines": {
     "node": ">=20"
