@@ -1,12 +1,12 @@
-# LamdReady Blogger 플랫폼 전환 명세 R3
+# LandReady Blogger 플랫폼 전환 명세 R3
 
 기준일: 2026-10-09.
 
 ## 적용 전 기준 스냅샷
 
 - Blog ID: 5877919860330006636
-- 현재 제목: LamdReady
-- 공식 서비스명: LamdReady (화면·문서 공통). 패키지 식별자는 npm 규칙에 따라 lamdready.
+- 현재 제목: LandReady
+- 공식 서비스명: LandReady (화면·문서 공통). 패키지 식별자는 npm 규칙에 따라 landready.
 - 공개 주소: https://ddori128.blogspot.com/
 - 실제 관리자 설정과 공개 홈페이지를 읽기 전용으로 확인했습니다.
 - 검색엔진 표시와 HTTPS 리디렉션은 활성화되어 있습니다.

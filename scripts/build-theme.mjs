@@ -1,13 +1,13 @@
 import fs from 'node:fs';
 const original = fs.readFileSync('backups/blogger-theme-original-20261009.xml', 'utf8');
-const css = fs.readFileSync('theme/lamdready.css', 'utf8');
+const css = fs.readFileSync('theme/landready.css', 'utf8');
 const html = fs.readFileSync('theme/home.html', 'utf8');
-const js = fs.readFileSync('theme/lamdready.js', 'utf8');
+const js = fs.readFileSync('theme/landready.js', 'utf8');
 if (!original.includes('</b:skin>') || !original.includes('</body>')) throw new Error('Unexpected base theme');
 let output = original.replace(/<meta[^>]*name='viewport'[^>]*\/>/, '<meta content="width=device-width, initial-scale=1" name="viewport"/>');
 if (fs.existsSync('backups/naver-verification-meta.txt')) output = output.replace(/<meta[^>]*name='naver-site-verification'[^>]*\/>/, fs.readFileSync('backups/naver-verification-meta.txt', 'utf8').trim());
 output = output.replace('</head>', '<style type="text/css">/*<![CDATA[*/' + css + '/*]]>*/</style>\n</head>');
 output = output.replace(/(<body[^>]*>)/, '$1\n<b:if cond="data:blog.url == data:blog.homepageUrl">' + html + '</b:if>');
 output = output.replace('</body>', '<script type="text/javascript">//<![CDATA[\n' + js + '\n//]]></script>\n</body>');
-fs.writeFileSync('theme/lamdready-blogger-r1.xml', output);
+fs.writeFileSync('theme/landready-blogger-r1.xml', output);
 console.log('Built theme; original widgets preserved; size:', output.length);

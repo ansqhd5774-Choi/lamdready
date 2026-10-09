@@ -1,4 +1,4 @@
-# LamdReady 개발 고도화 실행명세 R2
+# LandReady 개발 고도화 실행명세 R2
 
 기준일: 2026-10-09. 원본 Full Version R1의 제품 방향을 유지합니다.
 플랫폼 변경: 사용자가 Blogger를 지정했습니다. 공개 화면·URL·배포에 관한 Next.js 항목은 [Blogger 전환 명세](blogger-platform-r3.md)가 우선합니다.

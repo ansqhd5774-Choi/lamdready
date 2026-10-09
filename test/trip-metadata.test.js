@@ -12,6 +12,6 @@ test('trip metadata keeps personal query data out and retains intentional noinde
   assert.ok(html.includes('property="og:image"'));
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
   assert.equal(schema['@type'], 'WebPage');
-  assert.equal(schema.url, 'https://lamdready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP');
+  assert.equal(schema.url, 'https://landready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP');
   assert.ok(!('dateModified' in schema));
 });

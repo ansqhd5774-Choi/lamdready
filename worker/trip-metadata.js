@@ -1,4 +1,4 @@
-const host = 'https://lamdready-assets.ansqhd5774.workers.dev';
+const host = 'https://landready-assets.ansqhd5774.workers.dev';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function tripMetadata(origin, destination, destinationName) {
   const url = `${host}/trip?lang=ko&origin=${origin}&destination=${destination}`;

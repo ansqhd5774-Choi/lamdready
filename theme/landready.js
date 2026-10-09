@@ -10,7 +10,7 @@
   function pattern(q){return new RegExp([...q.toLowerCase().replace(/\s/g,'')].map(ch=>{const i=initial.indexOf(ch);if(i>=0){const start=0xac00+i*588;return `[${String.fromCharCode(start)}-${String.fromCharCode(start+587)}${ch}]`;}return ch.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}).join(''),'i');}
   const fields=['lr-origin','lr-destination'].map(id=>({input:document.getElementById(id),list:document.getElementById(id+'-list'),code:'',results:[],active:-1}));
   const route=document.getElementById('lr-trip-form');
-  const key='lamdready-route-v1';
+  const key='landready-route-v1';
 function createCountdown({go, progress, now=Date.now, later=setTimeout, clearLater=clearTimeout, repeat=setInterval, clearRepeat=clearInterval}) {
   let key='', timeout=null, interval=null, deadline=0;
   function cancel(){clearLater(timeout);clearRepeat(interval);timeout=interval=null;key='';progress(0,false);}
@@ -23,7 +23,7 @@ function createCountdown({go, progress, now=Date.now, later=setTimeout, clearLat
   const ring=continueButton.querySelector('circle');
   const timerStatus=document.getElementById('lr-countdown-status');
   let lastSecond=-1;
-  const countdown=createCountdown({go:selected=>{const [origin,destination]=selected.split(':');const next=new URL('https://lamdready-assets.ansqhd5774.workers.dev/trip');next.searchParams.set('lang',window.lrLanguage||'ko');next.searchParams.set('origin',origin);next.searchParams.set('destination',destination);location.assign(next.href);},progress:(value,running)=>{route.classList.toggle('lr-counting',running);ring.style.strokeDashoffset=String(132*(1-value));const seconds=Math.ceil(5*(1-value));if(running&&seconds!==lastSecond){const lang=window.lrLanguage||'ko';const messages={ko:seconds+'초 뒤 이동합니다. 화살표를 누르면 즉시 이동합니다.',en:'Continue in '+seconds+' seconds. Click the arrow to continue now.',zh:seconds+'秒后跳转。点击箭头立即继续。',de:'Weiter in '+seconds+' Sekunden. Zum Fortfahren auf den Pfeil klicken.',fr:'Départ dans '+seconds+' secondes. Cliquez sur la flèche pour continuer.'};timerStatus.textContent=messages[lang];lastSecond=seconds;}if(!running){lastSecond=-1;timerStatus.textContent='';}}});
+  const countdown=createCountdown({go:selected=>{const [origin,destination]=selected.split(':');const next=new URL('https://landready-assets.ansqhd5774.workers.dev/trip');next.searchParams.set('lang',window.lrLanguage||'ko');next.searchParams.set('origin',origin);next.searchParams.set('destination',destination);location.assign(next.href);},progress:(value,running)=>{route.classList.toggle('lr-counting',running);ring.style.strokeDashoffset=String(132*(1-value));const seconds=Math.ceil(5*(1-value));if(running&&seconds!==lastSecond){const lang=window.lrLanguage||'ko';const messages={ko:seconds+'초 뒤 이동합니다. 화살표를 누르면 즉시 이동합니다.',en:'Continue in '+seconds+' seconds. Click the arrow to continue now.',zh:seconds+'秒后跳转。点击箭头立即继续。',de:'Weiter in '+seconds+' Sekunden. Zum Fortfahren auf den Pfeil klicken.',fr:'Départ dans '+seconds+' secondes. Cliquez sur la flèche pour continuer.'};timerStatus.textContent=messages[lang];lastSecond=seconds;}if(!running){lastSecond=-1;timerStatus.textContent='';}}});
   continueButton.addEventListener('click',()=>{if(fields.every(f=>f.code))countdown.finish();});
   window.addEventListener('pagehide',()=>countdown.cancel());
   function close(f){f.list.hidden=true;f.input.setAttribute('aria-expanded','false');f.input.removeAttribute('aria-activedescendant');f.active=-1;}

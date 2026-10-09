@@ -3,10 +3,10 @@ import { createHash } from 'node:crypto';
 // Fixed public targets only. No user input, personal query data or credentials.
 const targets = [
   ['home','https://landready.blogspot.com/'],
-  ['trip','https://lamdready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP'],
+  ['trip','https://landready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP'],
   ['sitemap','https://landready.blogspot.com/sitemap.xml'],
-  ['logo','https://lamdready-assets.ansqhd5774.workers.dev/assets/favicon-r2.png'],
-  ['front','https://lamdready-assets.ansqhd5774.workers.dev/assets/japan-entry-card-1.png'],
+  ['logo','https://landready-assets.ansqhd5774.workers.dev/assets/favicon-r2.png'],
+  ['front','https://landready-assets.ansqhd5774.workers.dev/assets/japan-entry-card-1.png'],
 ];
 const file = 'artifacts/public-audit.json';
 let previous;

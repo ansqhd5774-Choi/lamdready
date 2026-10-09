@@ -10,7 +10,7 @@ test('public root redirects to Blogger; health never claims production rules', a
 });
 test('only public assets are exposed; writes and unknown paths are rejected', async () => {
   const env = { ASSETS: { fetch: async () => new Response('css', { headers: { 'Content-Type': 'text/css' } }) } };
-  const asset = await worker.fetch(new Request('https://example.test/assets/lamdready.css'), env);
+  const asset = await worker.fetch(new Request('https://example.test/assets/landready.css'), env);
   assert.equal(await asset.text(), 'css');
   assert.equal(asset.headers.get('Access-Control-Allow-Origin'), '*');
   assert.equal((await worker.fetch(new Request('https://example.test/backups/original.xml'), env)).status, 404);

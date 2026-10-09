@@ -6,5 +6,6 @@ dist/
 .env
 .env.*
 .dev.vars*
-theme/lamdready-blogger-r1.xml
+theme/landready-blogger-r1.xml
 local-data/
+theme/lamdready-blogger-r1.xml

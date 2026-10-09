@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises';
 import {documentResources,nestedResources} from '../src/performance-audit.js';
-const targets=[['home','https://landready.blogspot.com/'],['trip','https://lamdready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP']];
+const targets=[['home','https://landready.blogspot.com/'],['trip','https://landready-assets.ansqhd5774.workers.dev/trip?lang=ko&origin=KR&destination=JP']];
 const results=[];
-const allowed=new Set(['landready.blogspot.com','lamdready-assets.ansqhd5774.workers.dev','fonts.googleapis.com','fonts.gstatic.com','resources.blogblog.com','www.blogger.com','blogger.googleusercontent.com','www.gstatic.com']);
+const allowed=new Set(['landready.blogspot.com','landready-assets.ansqhd5774.workers.dev','fonts.googleapis.com','fonts.gstatic.com','resources.blogblog.com','www.blogger.com','blogger.googleusercontent.com','www.gstatic.com']);
 async function retrieve(url){
  const start=performance.now();
  const response=await fetch(url,{signal:AbortSignal.timeout(20000)});
