@@ -1,6 +1,6 @@
 # GitHub / Cloudflare 연결
 
-공개 사이트는 https://lamdready.blogspot.com/ 이며 Blogger에서 유지한다.
+공개 사이트는 https://landready.blogspot.com/ 이며 Blogger에서 유지한다.
 GitHub 공개 저장소: https://github.com/ansqhd5774-Choi/lamdready
 
 Cloudflare Worker 이름: `lamdready-assets`.

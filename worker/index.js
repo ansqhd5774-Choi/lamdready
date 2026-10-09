@@ -1,4 +1,4 @@
-const publicSite = 'https://lamdready.blogspot.com/';
+const publicSite = 'https://landready.blogspot.com/';
 import { api } from './api.js';
 import { tripPage } from './trip.js';
 export default {
