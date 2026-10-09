@@ -153,3 +153,61 @@
 #lr-app .jp-actions{justify-content:flex-end;margin:12px 0}
 @media(max-width:600px){#lr-app .jp-actions{align-items:flex-end}#lr-app .jp-all-editor .jp-split-box:has(textarea){grid-template-columns:1fr}#lr-app .jp-all-editor .jp-split-box:has(textarea)>.jp-translation-cell{grid-column:1;grid-row:2;border-left:0;border-top:1px solid #ccdddf}}
 #lr-app .jp-field-status[data-state="success"]{color:#25717b}
+
+/* Selected compact mobile design; form behavior and official scan stay intact. */
+#lr-app.lr-japan-trip{--ink:#10283c;background:#fff;color:var(--ink);font-family:'Segoe UI','Malgun Gothic',sans-serif}
+#lr-app.lr-japan-trip:before{display:none}
+#lr-app.lr-japan-trip>.lr-header{display:none}
+#lr-app.lr-japan-trip main{width:min(740px,100%);margin:24px auto 0}
+#lr-app.lr-japan-trip .lr-preparation{padding:24px 28px;background:#fff;border-radius:0;box-shadow:none}
+#lr-app.lr-japan-trip .lr-trip-nav{top:21px;left:20px}
+#lr-app.lr-japan-trip .lr-trip-back{width:44px;height:44px;min-height:44px}
+#lr-app.lr-japan-trip .lr-trip-back:before{width:44px;height:44px;border-radius:0;box-shadow:none;background:transparent url('/assets/chevron-left.svg') center/25px no-repeat}
+#lr-app.lr-japan-trip .lr-trip-back:hover:before{transform:none}
+#lr-app.lr-japan-trip .lr-trip-back:focus-visible{outline:2px solid #16808a;outline-offset:2px;border-radius:8px}
+#lr-app.lr-japan-trip .jp-heading{padding:0 40px 8px}
+#lr-app.lr-japan-trip .jp-heading h2{font-size:21px;line-height:29px;letter-spacing:-.5px;color:#10283c;margin:0}
+#lr-app.lr-japan-trip .jp-heading .lr-route-chips{margin:6px 0 0;gap:8px}
+#lr-app.lr-japan-trip .lr-country-chip{background:transparent;padding:0;border-radius:0;font-size:13px;color:#617184;gap:4px}
+#lr-app.lr-japan-trip .lr-country-chip small{background:transparent;padding:0;color:#617184;font-size:10px}
+#lr-app.lr-japan-trip .lr-route-divider{width:20px;color:#617184}
+#lr-app.lr-japan-trip .lr-route-divider svg{width:18px;height:18px}
+#lr-app.lr-japan-trip .jp-card-photo{margin:16px 0 8px;border-radius:0}
+#lr-app.lr-japan-trip .jp-card-photo figcaption{padding:8px 0;font-size:11px;color:#617184;line-height:17px}
+#lr-app.lr-japan-trip .jp-language-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin:8px 0 16px}
+#lr-app.lr-japan-trip .jp-language-cards li{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border:0;border-bottom:1px solid #dfe7ec;border-radius:0;background:transparent}
+#lr-app.lr-japan-trip .jp-language-cards .jp-item-number{width:24px;height:24px;flex:0 0 24px;border-radius:7px;background:#d9f1f2;color:#123f4a;font-size:13px;line-height:24px;margin-top:1px}
+#lr-app.lr-japan-trip .jp-item-languages{display:block;min-width:0}
+#lr-app.lr-japan-trip .jp-item-heading{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:22px}
+#lr-app.lr-japan-trip .jp-item-heading .jp-item-ko{font-size:14px;line-height:22px;color:#10283c;margin:0;letter-spacing:-.2px}
+#lr-app.lr-japan-trip .jp-item-originals{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;margin:1px 0 0}
+#lr-app.lr-japan-trip .jp-item-originals .jp-item-ja,#lr-app.lr-japan-trip .jp-item-originals .jp-item-en{font-size:11px;line-height:16px;color:#617184;margin:0}
+#lr-app.lr-japan-trip .jp-item-heading .jp-title-example{background:#fff3df;color:#99630d;border:0;border-radius:12px;padding:1px 7px;margin:0;box-shadow:none;font-size:11px;line-height:19px}
+#lr-app.lr-japan-trip .jp-inline-editor{margin:4px 0 0 -34px;padding:0;width:calc(100% + 34px);border:0}
+#lr-app.lr-japan-trip .jp-split-box{min-height:44px;border:1px solid #cddfe6;border-radius:7px;background:#fff;box-shadow:none}
+#lr-app.lr-japan-trip .jp-split-box:focus-within{border-color:#21848d;box-shadow:0 0 0 1px #21848d}
+#lr-app.lr-japan-trip .jp-split-editor .jp-split-box input,#lr-app.lr-japan-trip .jp-all-editor select,#lr-app.lr-japan-trip .jp-all-editor textarea{height:44px;min-height:44px;padding:10px 8px;margin:0;border:0;border-radius:0;background:#fff;color:#10283c;font-size:14px;line-height:22px;text-align:center}
+#lr-app.lr-japan-trip .jp-all-editor textarea{height:auto;min-height:66px;line-height:21px;resize:vertical;text-align:left}
+#lr-app.lr-japan-trip .jp-split-box input::placeholder,#lr-app.lr-japan-trip .jp-split-box textarea::placeholder{color:#738291;opacity:1;font-size:12px}
+#lr-app.lr-japan-trip .jp-split-box>.jp-translation-cell{background:#e9f6f7;color:#10283c;border-left:1px solid #cddfe6;min-height:44px}
+#lr-app.lr-japan-trip .jp-translation-cell output{padding:8px 30px 8px 8px;font-size:14px;line-height:20px;overflow-wrap:anywhere;white-space:pre-wrap;pointer-events:none;user-select:none}
+#lr-app.lr-japan-trip .jp-translation-cell output:empty:before{content:'영문 결과';color:#738291;font-size:12px}
+#lr-app.lr-japan-trip .jp-copy-button{right:0;top:0;width:32px;height:44px;color:#17636f;border-radius:0}
+#lr-app.lr-japan-trip .jp-copy-button svg{width:18px;height:18px}
+#lr-app.lr-japan-trip .jp-copy-button:disabled{opacity:.3}
+#lr-app.lr-japan-trip .jp-copy-button:not(:disabled):hover{background:#d7edf0}
+#lr-app.lr-japan-trip .jp-field-tip:not(.lr-sr-only),#lr-app.lr-japan-trip .jp-field-status,#lr-app.lr-japan-trip .jp-conversion-help{margin:5px 0 0;font-size:11px;line-height:17px;color:#617184}
+#lr-app.lr-japan-trip .jp-field-status:not([data-state="success"]){color:#a34230}
+#lr-app.lr-japan-trip .jp-field-status[data-state="success"]{color:#17636f}
+#lr-app.lr-japan-trip .jp-conversion-help:empty{display:none}
+#lr-app.lr-japan-trip .jp-purpose-other{font-size:14px;min-height:44px}
+@media(max-width:600px){
+ #lr-app.lr-japan-trip main{width:100%;margin:0}
+ #lr-app.lr-japan-trip .lr-preparation{padding:18px 16px 24px}
+ #lr-app.lr-japan-trip .lr-trip-nav{top:12px;left:8px}
+ #lr-app.lr-japan-trip .jp-heading{padding:0 32px 4px}
+ #lr-app.lr-japan-trip .jp-heading h2{font-size:20px;line-height:28px}
+ #lr-app.lr-japan-trip .jp-all-editor .jp-split-box:has(textarea)>.jp-translation-cell{border-left:0;border-top:1px solid #cddfe6}
+ #lr-app.lr-japan-trip #jp-field-country-result{font-size:12px;line-height:17px}
+ #lr-app.lr-japan-trip input[type="date"]{font-size:12px;padding:10px 4px}
+}
