@@ -1,4 +1,10 @@
 // Static document resource inventory, not a browser waterfall or Core Web Vitals.
+export function cssUnescape(value){
+ return value.replace(/\\(?:([0-9a-f]{1,6})(?:\r\n|[ \t\r\n\f])?|\r\n|[\n\r\f]|([^\n\r\f]))/gi,(_match,hex,char)=>{
+  if(hex){const point=parseInt(hex,16);return point===0||point>0x10ffff||(point>=0xd800&&point<=0xdfff)?'\ufffd':String.fromCodePoint(point);}
+  return char||'';
+ });
+}
 export function attributes(tag) {
   const result={};
   for(const match of tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)) result[match[1].toLowerCase()]=match[2]??match[3];
@@ -18,7 +24,9 @@ export function documentResources(html,base) {
 export function nestedResources(text,base,kind){
  const result=[];
  const add=(raw,type)=>{try{const url=new URL(raw,base);if(url.protocol==='https:')result.push({kind:type,url:url.href});}catch{}};
- if(kind==='stylesheet')for(const match of text.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g))add(match[1],/\.(?:woff2?|ttf|otf)(?:\?|$)/i.test(match[1])?'font':'css-resource');
+ if(kind==='stylesheet')for(const match of text.matchAll(/url\(\s*(?:"((?:\\[\s\S]|[^"\\])*)"|'((?:\\[\s\S]|[^'\\])*)'|((?:\\(?:[0-9a-f]{1,6}\s?|[\s\S])|[^\s)'"\\])+))\s*\)/gi)){
+  const raw=cssUnescape(match[1]??match[2]??match[3]);add(raw,/\.(?:woff2?|ttf|otf)(?:\?|$)/i.test(raw)?'font':'css-resource');
+ }
  if(kind==='script')for(const match of text.matchAll(/(?:\bfrom\s*|\bimport\s*)["']([^"']+)["']/g))if(/^(?:\.\/|\.\.\/|\/|https:\/\/)/.test(match[1]))add(match[1],'script');
  return result;
 }

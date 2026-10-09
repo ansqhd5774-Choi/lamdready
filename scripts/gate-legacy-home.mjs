@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+const [input,output]=process.argv.slice(2);
+if(!input||!output||input===output)throw Error('DISTINCT_INPUT_OUTPUT_REQUIRED');
+let xml=await fs.readFile(input,'utf8');
+if(!xml.includes("id='lr-app'")||xml.includes('lr-legacy-home-gate'))throw Error('UNEXPECTED_THEME_STATE');
+const start="  <b:section class='navbar'";
+const end="<script type='text/javascript'>//<![CDATA[\n(() => {\n  'use strict';\n  const app = document.getElementById('lr-app');";
+xml=xml.replaceAll('\r\n','\n');
+if(xml.split(start).length!==2||xml.split(end).length!==2)throw Error('LEGACY_BOUNDARIES_AMBIGUOUS');
+const ads=/<script\b[^>]*src='https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^']*'[^>]*\/>/g;
+if([...xml.matchAll(ads)].length!==1)throw Error('HEAD_AD_BOUNDARY_AMBIGUOUS');
+xml=xml.replace(ads,tag=>"<b:if cond='data:blog.url != data:blog.homepageUrl'>"+tag+'</b:if>');
+xml=xml.replace(start,"<!-- lr-legacy-home-gate: preserve legacy widgets outside travel home -->\n<b:if cond='data:blog.url != data:blog.homepageUrl'>\n"+start);
+xml=xml.replace(end,'</b:if>\n'+end);
+await fs.writeFile(output,xml);console.log('Legacy home gate prepared; not deployed');
