@@ -16,12 +16,24 @@
  const vowel=['A','AE','YA','YAE','EO','E','YEO','YE','O','WA','WAE','OE','YO','U','WO','WE','WI','YU','EU','UI','I'];
  const tail=['','K','K','K','N','N','N','T','L','K','M','L','L','L','P','L','M','P','P','T','T','NG','T','T','K','T','P','T'];
  function given(v){if(!/^[가-힣a-zA-Z -]+$/.test(v))return '';return [...v].map(c=>{const n=c.charCodeAt(0)-44032;if(n<0||n>11171)return c.toUpperCase();return lead[Math.floor(n/588)]+vowel[Math.floor(n%588/28)]+tail[n%28];}).join('');}
+ const controls={};
  for(const key of ['surname','given']){
-  const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),output=document.getElementById('jp-'+key+'-output'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
+  const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
   const sync=()=>{if(field)field.value=result.value;};
-  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);output.hidden=!v;sync();help.textContent=v&&!result.value?'자동 변환이 어렵습니다. 여권 영문 표기를 입력하세요.':'여권의 영문 표기와 맞춰 수정하세요.';};
-  source.addEventListener('input',convert);source.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();convert();}});document.querySelector('[data-convert="'+key+'"]').addEventListener('click',convert);result.addEventListener('input',sync);
-  field?.addEventListener('input',()=>{result.value=field.value;output.hidden=!field.value;});
-  document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';output.hidden=true;help.textContent='여권의 영문 표기와 맞춰 수정하세요.';});
+  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 왼쪽에 입력하세요.':'여권의 영문 표기와 맞춰 수정하세요.';help.hidden=!v;};
+  controls[key]={source,result,convert};
+  const update=()=>{
+   const v=source.value.trim().normalize('NFC').replace(/\s+/g,'');
+   if(key==='surname'&&/^[가-힣]+$/.test(v)&&v.length>1&&!names[v]){
+    const compound=Object.keys(names).find(n=>n.length===2&&v.startsWith(n));const count=compound?2:1;
+    source.value=v.slice(0,count);controls.given.source.value=v.slice(count);controls.given.convert();convert();
+    controls.given.source.focus();controls.given.source.setSelectionRange(controls.given.source.value.length,controls.given.source.value.length);return;
+   }
+   convert();
+  };
+  source.addEventListener('input',e=>{if(!e.isComposing)update();});source.addEventListener('compositionend',update);source.addEventListener('blur',update);
+  result.addEventListener('input',sync);field?.addEventListener('input',()=>{result.value=field.value;});
+  document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.hidden=true;});
+  help.hidden=true;
  }
 })();
