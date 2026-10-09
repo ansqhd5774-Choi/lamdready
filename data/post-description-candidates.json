@@ -1,0 +1,464 @@
+{
+  "checkedAt": "2026-10-09T19:31:03.453307+00:00",
+  "source": "https://landready.blogspot.com/feeds/posts/default?alt=json&max-results=150",
+  "scope": "Existing22 English public posts; neutral content descriptions, not validated health advice.",
+  "published": false,
+  "posts": [
+    {
+      "url": "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html",
+      "title": "Let's succeed in dieting with Amaranth!!",
+      "description": "This article discusses amaranth, including history, nutrients, recipes and freshness.",
+      "language": "en",
+      "topic": "Amaranth",
+      "primaryQuestion": "What is Amaranth, and what is its historical background?",
+      "bodyCharacters": 7998,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-learn-about-phytosterols-efficacy.html",
+        "https://landready.blogspot.com/2023/11/the-efficacy-of-catechin-and-secret-to.html",
+        "https://landready.blogspot.com/2023/11/the-ultimate-guide-to-rapid-weight-loss.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/lets-learn-about-phytosterols-efficacy.html",
+      "title": "Let's learn about phytosterols efficacy and diet.",
+      "description": "This article discusses phytosterols, including food sources, intake and side-effect questions.",
+      "language": "en",
+      "topic": "Phytosterols",
+      "primaryQuestion": "What are phytosterols?",
+      "bodyCharacters": 8145,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/the-efficacy-of-catechin-and-secret-to.html",
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/essential-for-perfect-makeup-primer.html",
+      "title": "Essential for perfect makeup!!! Primer!",
+      "description": "This article discusses makeup primer, including application, skin types, ingredients and product selection.",
+      "language": "en",
+      "topic": "Makeup primer",
+      "primaryQuestion": "What is a primer?",
+      "bodyCharacters": 11817,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/perfect-skin-protection-create.html",
+        "https://landready.blogspot.com/2023/11/reveal-your-radiant-skin-say-goodbye-to.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/diet-and-hair-loss-in-one-go-with-beer.html",
+      "title": "Diet and hair loss in one go with Beer Yeast!",
+      "description": "This article discusses brewer’s yeast, including production, dietary uses, intake and supplements.",
+      "language": "en",
+      "topic": "Brewer’s yeast",
+      "primaryQuestion": "What is beer yeast and what is its production process?",
+      "bodyCharacters": 7348,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/what-is-key-to-preventing-hair-loss.html",
+        "https://landready.blogspot.com/2023/11/lets-learn-about-phytosterols-efficacy.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/the-efficacy-of-catechin-and-secret-to.html",
+      "title": "The efficacy of catechin and the secret to diet success!!",
+      "description": "This article discusses catechins, including tea, food sources, intake and dietary questions.",
+      "language": "en",
+      "topic": "Catechins",
+      "primaryQuestion": "What is the definition of catechin, and what kind of compound is it?",
+      "bodyCharacters": 5560,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-learn-about-phytosterols-efficacy.html",
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/secret-of-banana-leaf-diet-appeal-of.html",
+      "title": "Secret of Banana Leaf Diet! The appeal of new foods that take care of health and the environment at the same time",
+      "description": "This article discusses banana leaves, including cultural background, cooking uses and freshness.",
+      "language": "en",
+      "topic": "Banana leaves",
+      "primaryQuestion": "1. What is a banana leaf? What is your historical and cultural background?",
+      "bodyCharacters": 6474,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/kamut-superfood-skin-diet-focus-on-women.html",
+      "title": "Kamut Superfood! skin! diet! Focus on women!",
+      "description": "This article discusses kamut, including intake, food sources and supplement questions.",
+      "language": "en",
+      "topic": "Kamut",
+      "primaryQuestion": "1. What is kamut?",
+      "bodyCharacters": 6180,
+      "reviewState": "HOLD_CONTENT_REVIEW",
+      "applyEligible": false,
+      "issue": "표제 Kamut와 본문 Amazon fruit 설명이 충돌",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html",
+        "https://landready.blogspot.com/2023/11/wheatgrass-benefits-and-effects-when.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/wheatgrass-benefits-and-effects-when.html",
+      "title": "Wheatgrass benefits and effects when consumed for a month!",
+      "description": "This article discusses wheatgrass / barley sprouts, including recipes, freshness and intake questions.",
+      "language": "en",
+      "topic": "Wheatgrass / barley sprouts",
+      "primaryQuestion": "1. What is the introduction and history of sprout barley?",
+      "bodyCharacters": 7720,
+      "reviewState": "HOLD_CONTENT_REVIEW",
+      "applyEligible": false,
+      "issue": "표제 Wheatgrass와 반복 heading barley sprouts 혼재",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html",
+        "https://landready.blogspot.com/2023/11/kamut-superfood-skin-diet-focus-on-women.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/revitalize-your-sleep-and-skin-tart.html",
+      "title": "Revitalize Your Sleep and Skin: The Tart Cherry Revolution for Better Health",
+      "description": "This article discusses tart cherry, including history, nutrients and sleep and skin questions.",
+      "language": "en",
+      "topic": "Tart cherry",
+      "primaryQuestion": "1. What is the introduction and history of Tatcherie?",
+      "bodyCharacters": 6914,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/unlock-power-of-kakadu-plum-ultimate.html",
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/unlock-power-of-kakadu-plum-ultimate.html",
+      "title": "Unlock the Power of Kakadu Plum: The Ultimate Guide to Australia's Vitamin C Superfruit!",
+      "description": "This article discusses kakadu plum, including Australian background, nutrients and dietary uses.",
+      "language": "en",
+      "topic": "Kakadu plum",
+      "primaryQuestion": "1. What is the introduction and history of Kakaduplum?",
+      "bodyCharacters": 6792,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/revitalize-your-sleep-and-skin-tart.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/unlocking-power-of-arginine-boost-your.html",
+      "title": "Unlocking the Power of Arginine: Boost Your Blood Circulation and Prevent Hypertension!",
+      "description": "This article discusses arginine, including physiological roles, food sources and circulation questions.",
+      "language": "en",
+      "topic": "Arginine",
+      "primaryQuestion": "1. What is arginine? What is your definition?",
+      "bodyCharacters": 7307,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/iron-deficiency-lactoferrin-is.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/iron-deficiency-lactoferrin-is.html",
+      "title": "Iron deficiency? Lactoferrin is responsible! No iron deficiency!",
+      "description": "This article discusses lactoferrin, including milk sources, iron, intake and supplement questions.",
+      "language": "en",
+      "topic": "Lactoferrin",
+      "primaryQuestion": "1. What is lactoferrin? What is your definition?",
+      "bodyCharacters": 6667,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/the-power-of-goat-milk-to-strengthen.html",
+        "https://landready.blogspot.com/2023/11/unlocking-power-of-arginine-boost-your.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/the-power-of-goat-milk-to-strengthen.html",
+      "title": "The power of goat milk to strengthen the body’s immune system!!",
+      "description": "This article discusses goat milk / sheep butter, including milk, butter, nutrients and digestion questions.",
+      "language": "en",
+      "topic": "Goat milk / sheep butter",
+      "primaryQuestion": "1. What is goat milk and what role does it play?",
+      "bodyCharacters": 9806,
+      "reviewState": "HOLD_CONTENT_REVIEW",
+      "applyEligible": false,
+      "issue": "표제 Goat milk와 본문 sheep butter 혼재",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/iron-deficiency-lactoferrin-is.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/the-ultimate-guide-to-rapid-weight-loss.html",
+      "title": "The Ultimate Guide to Rapid Weight Loss: Unleash the Power of the Keto Diet!",
+      "description": "This article discusses ketogenic diet, including carbohydrate restriction, ketosis and weight-management questions.",
+      "language": "en",
+      "topic": "Ketogenic diet",
+      "primaryQuestion": "1. What is a keto diet?",
+      "bodyCharacters": 9991,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/lets-succeed-in-dieting-with-amaranth.html",
+        "https://landready.blogspot.com/2023/11/the-efficacy-of-catechin-and-secret-to.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/unveiling-truth-behind-freckles.html",
+      "title": "Unveiling the Truth Behind Freckles: Understanding Pigmentation and Melanin",
+      "description": "This article discusses freckles / pigmentation, including skin changes, possible causes and care questions.",
+      "language": "en",
+      "topic": "Freckles / pigmentation",
+      "primaryQuestion": "1. What exactly does a freckle mean?",
+      "bodyCharacters": 12515,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/perfect-skin-protection-create.html",
+        "https://landready.blogspot.com/2023/11/how-much-do-you-know-about-wrinkles.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/reveal-your-radiant-skin-say-goodbye-to.html",
+      "title": "Reveal Your Radiant Skin: Say Goodbye to Dead Skin Cells!",
+      "description": "This article discusses dead skin cells, including keratinization, skin changes and exfoliation.",
+      "language": "en",
+      "topic": "Dead skin cells",
+      "primaryQuestion": "1. What exactly do you mean by dead skin cells?",
+      "bodyCharacters": 8468,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/heres-how-to-completely-overcome-acne.html",
+        "https://landready.blogspot.com/2023/11/essential-for-perfect-makeup-primer.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/heres-how-to-completely-overcome-acne.html",
+      "title": "Here's how to completely overcome acne skin!!",
+      "description": "This article discusses acne, including causes, types and daily skin-care questions.",
+      "language": "en",
+      "topic": "Acne",
+      "primaryQuestion": "1. What exactly does acne mean?",
+      "bodyCharacters": 5991,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/reveal-your-radiant-skin-say-goodbye-to.html",
+        "https://landready.blogspot.com/2023/11/essential-for-perfect-makeup-primer.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/what-is-key-to-preventing-hair-loss.html",
+      "title": "What is the key to preventing hair loss? Let's get out of hair loss in one shot!",
+      "description": "This article discusses hair loss, including causes, types, daily habits and treatment questions.",
+      "language": "en",
+      "topic": "Hair loss",
+      "primaryQuestion": "1. What exactly does hair loss mean?",
+      "bodyCharacters": 6693,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/diet-and-hair-loss-in-one-go-with-beer.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/if-you-want-to-lose-chin-fat-solve-it.html",
+      "title": "If you want to lose chin fat, solve it with this article!!!",
+      "description": "This article discusses chin fat / jowls, including possible causes, skin changes and management questions.",
+      "language": "en",
+      "topic": "Chin fat / jowls",
+      "primaryQuestion": "1. What exactly does chin fat mean?",
+      "bodyCharacters": 6018,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/how-much-do-you-know-about-wrinkles.html",
+        "https://landready.blogspot.com/2023/11/the-ultimate-guide-to-rapid-weight-loss.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/how-much-do-you-know-about-wrinkles.html",
+      "title": "How much do you know about wrinkles???",
+      "description": "This article discusses wrinkles, including skin aging, possible causes and daily care.",
+      "language": "en",
+      "topic": "Wrinkles",
+      "primaryQuestion": "1. What is the definition of wrinkles?",
+      "bodyCharacters": 7124,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/perfect-skin-protection-create.html",
+        "https://landready.blogspot.com/2023/11/unveiling-truth-behind-freckles.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/the-effects-of-radioactive-water-on-our.html",
+      "title": "The effects of radioactive water on our bodies!! (2023)",
+      "description": "This article discusses radiation and contaminated water, including radiation, contaminated water and public safety questions.",
+      "language": "en",
+      "topic": "Radiation and contaminated water",
+      "primaryQuestion": "1. What is radioactivity?",
+      "bodyCharacters": 11037,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    },
+    {
+      "url": "https://landready.blogspot.com/2023/11/perfect-skin-protection-create.html",
+      "title": "Perfect skin protection! Create brilliant skin with the best sunscreen",
+      "description": "This article discusses sunscreen, including ingredients, application and product-selection questions.",
+      "language": "en",
+      "topic": "Sunscreen",
+      "primaryQuestion": "1. What is sun cream and what role does it play?",
+      "bodyCharacters": 8823,
+      "reviewState": "DRAFT_CONTENT_BASED",
+      "applyEligible": true,
+      "issue": "",
+      "relatedCandidates": [
+        "https://landready.blogspot.com/2023/11/unveiling-truth-behind-freckles.html",
+        "https://landready.blogspot.com/2023/11/how-much-do-you-know-about-wrinkles.html",
+        "https://landready.blogspot.com/2023/11/essential-for-perfect-makeup-primer.html"
+      ],
+      "channelRelevance": {
+        "healthBeauty": "RELATED_TOPIC_ONLY",
+        "LandReadyTravel": "NOT_DIRECTLY_RELATED"
+      },
+      "medicalClaimsVerified": false
+    }
+  ]
+}

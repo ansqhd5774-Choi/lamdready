@@ -188,10 +188,10 @@
 #lr-app.lr-japan-trip .jp-split-box:focus-within{border-color:#21848d;box-shadow:0 0 0 1px #21848d}
 #lr-app.lr-japan-trip .jp-split-editor .jp-split-box input,#lr-app.lr-japan-trip .jp-all-editor select,#lr-app.lr-japan-trip .jp-all-editor textarea{height:44px;min-height:44px;padding:10px 8px;margin:0;border:0;border-radius:0;background:#fff;color:#10283c;font-size:14px;line-height:22px;text-align:center}
 #lr-app.lr-japan-trip .jp-all-editor textarea{height:auto;min-height:66px;line-height:21px;resize:vertical;text-align:left}
-#lr-app.lr-japan-trip .jp-split-box input::placeholder,#lr-app.lr-japan-trip .jp-split-box textarea::placeholder{color:#738291;opacity:1;font-size:12px}
+#lr-app.lr-japan-trip .jp-split-box input::placeholder,#lr-app.lr-japan-trip .jp-split-box textarea::placeholder{color:#617184;opacity:1;font-size:12px}
 #lr-app.lr-japan-trip .jp-split-box>.jp-translation-cell{background:#e9f6f7;color:#10283c;border-left:1px solid #cddfe6;min-height:44px}
 #lr-app.lr-japan-trip .jp-translation-cell output{padding:8px 30px 8px 8px;font-size:14px;line-height:20px;overflow-wrap:anywhere;white-space:pre-wrap;pointer-events:none;user-select:none}
-#lr-app.lr-japan-trip .jp-translation-cell output:empty:before{content:'영문 결과';color:#738291;font-size:12px}
+#lr-app.lr-japan-trip .jp-translation-cell output:empty:before{content:'영문 결과';color:#617184;font-size:12px}
 #lr-app.lr-japan-trip .jp-copy-button{right:0;top:0;width:32px;height:44px;color:#17636f;border-radius:0}
 #lr-app.lr-japan-trip .jp-copy-button svg{width:18px;height:18px}
 #lr-app.lr-japan-trip .jp-copy-button:disabled{opacity:.3}

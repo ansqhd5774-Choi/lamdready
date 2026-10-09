@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/landready.js && node --check worker/trip-metadata.js && node --check theme/japan-entry.js && node --check theme/japan-fields.js && node --check theme/japan-pickers.js && node --check theme/entry-events.js && node --check scripts/audit-inventory.mjs && node --check scripts/review-sources.mjs && node --check scripts/audit-links.mjs && node --check scripts/audit-performance.mjs && node --check scripts/resume-links.mjs && node --check src/seo-audit.js && node --check scripts/audit-seo-links.mjs",
+    "check": "node --check src/rule-engine.js && node --check src/fx.js && node --check worker/index.js && node --check worker/api.js && node --check theme/landready.js && node --check worker/trip-metadata.js && node --check theme/japan-entry.js && node --check theme/japan-fields.js && node --check theme/japan-pickers.js && node --check theme/entry-events.js && node --check scripts/audit-inventory.mjs && node --check scripts/review-sources.mjs && node --check scripts/audit-links.mjs && node --check scripts/audit-performance.mjs && node --check scripts/resume-links.mjs && node --check src/seo-audit.js && node --check scripts/audit-seo-links.mjs && node --check scripts/resume-images.mjs",
     "build": "node scripts/build-assets.mjs && node scripts/check-assets.mjs",
     "deploy": "wrangler deploy",
     "collect": "node scripts/collect-local.mjs",
@@ -16,7 +16,8 @@
     "audit:links": "node scripts/audit-links.mjs",
     "audit:performance": "node scripts/audit-performance.mjs",
     "audit:links:resume": "node scripts/resume-links.mjs",
-    "audit:seo": "node scripts/audit-seo-links.mjs"
+    "audit:seo": "node scripts/audit-seo-links.mjs",
+    "audit:images:resume": "node scripts/resume-images.mjs"
   },
   "engines": {
     "node": ">=20"

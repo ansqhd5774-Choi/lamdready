@@ -1,0 +1,14 @@
+{
+  "version": "20261010-r1",
+  "homeOgImage": "https://landready-assets.ansqhd5774.workers.dev/assets/favicon-r2.png",
+  "homeOnly": true,
+  "cssSource": "theme/existing-post-responsive.css",
+  "footerImage": {
+    "selector": "FeaturedPost1 img.image",
+    "altExpression": "data:postTitle",
+    "width": 237,
+    "height": 320,
+    "loading": "lazy",
+    "dimensionsScope": "Current first-post image only; update dimensions when the featured post changes."
+  }
+}
