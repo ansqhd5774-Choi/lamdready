@@ -119,3 +119,10 @@
 .jp-split-box:focus-within{box-shadow:0 0 0 2px #3b8592}
 #lr-app .jp-split-editor .jp-conversion-help:not([hidden]){display:block}
 #lr-app .jp-split-editor .jp-conversion-help[hidden]{display:none}
+
+.jp-translation-cell{display:flex;position:relative;min-width:0;align-items:center;border-right:1px solid #ccdddf;background:#eaf3f3;color:#25717b}
+#lr-app .jp-translation-cell output{display:block;width:100%;padding:10px 44px;text-align:center;font-size:14px;line-height:20px;overflow-wrap:anywhere;pointer-events:none;user-select:none}
+#lr-app .jp-translation-cell output:empty:before{content:'영문 변환';color:#526e74;font-size:12px}
+#lr-app .jp-copy-button{position:absolute;right:0;top:0;width:40px;height:48px;display:grid;place-items:center;border:0;background:transparent;color:#25717b;cursor:pointer;padding:0}
+.jp-copy-button svg{width:17px;height:17px}.jp-copy-button:disabled{opacity:.35;cursor:default}.jp-copy-button:focus-visible{outline:2px solid #3b8592;outline-offset:-3px;border-radius:6px}
+#lr-app .jp-split-editor .jp-split-box input:first-of-type{border:0;color:#183c45;background:transparent}

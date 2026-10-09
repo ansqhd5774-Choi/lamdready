@@ -20,8 +20,12 @@
  for(const key of ['surname','given']){
   const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
   const sync=()=>{if(field)field.value=result.value;};
-  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 왼쪽에 입력하세요.':'여권의 영문 표기와 맞춰 수정하세요.';help.hidden=!v;};
+  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 오른쪽에 입력하세요.':'여권의 영문 표기와 일치하는지 확인하세요.';help.hidden=!v;};
   controls[key]={source,result,convert};
+  const copy=document.querySelector('[data-copy="'+key+'"]');
+  const updateCopy=()=>{copy.disabled=!result.value;};
+  new MutationObserver(updateCopy).observe(result,{childList:true});
+  copy.addEventListener('click',async()=>{if(!result.value)return;try{await navigator.clipboard.writeText(result.value);help.hidden=false;help.textContent='복사했습니다.';}catch{help.hidden=false;help.textContent='복사 권한을 확인한 뒤 다시 눌러주세요.';}});
   const update=()=>{
    const v=source.value.trim().normalize('NFC').replace(/\s+/g,'');
    if(key==='surname'&&/^[가-힣]+$/.test(v)&&v.length>1&&!names[v]){
@@ -32,7 +36,7 @@
    convert();
   };
   source.addEventListener('input',e=>{if(!e.isComposing)update();});source.addEventListener('compositionend',update);source.addEventListener('blur',update);
-  result.addEventListener('input',sync);field?.addEventListener('input',()=>{result.value=field.value;});
+field?.addEventListener('input',()=>{result.value=field.value;});
   document.getElementById('jp-entry-form')?.addEventListener('reset',()=>{source.value='';result.value='';help.hidden=true;});
   help.hidden=true;
  }
