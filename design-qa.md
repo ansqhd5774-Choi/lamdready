@@ -37,9 +37,9 @@ final result: passed
 - [x] 1–14번 모두 동일 디자인 계열로 정리
 - [x] 기존 기능과 공식 양식 보존
 - [x] 모바일·PC 실제 화면과 주요 동작 확인
-- [ ] 공개 배포 후 stylesheet 버전과 실제 화면 확인
+- [x] 공개 배포 후 stylesheet 버전과 실제 화면 확인
 
 ## 공개 검증
 
-배포 후 증거는 아래에 기록한다.
+2026-10-10 공개 Worker에서 `compact-design-r1`과 `lr-japan-trip`을 직접 확인했다. 390px에서 1–8번 입력·변환 결과와 HONG 실제 클립보드 복사를 확인했다. 새로고침 후 동일 KR→JP 경로가 유지된다. 공개 360/390/1280px 가로 넘침 없음, 360px 내부 잘림 0건, 14개 항목 유지, console error 없음. 증거: `artifacts/compact-public-mobile.png`, `artifacts/compact-public-full390.png`, `artifacts/compact-public-360.png`, `artifacts/compact-public-pc.png`. 코드 배포 commit: `8b91fab`. 후속 문서 commit은 동일 코드의 이 검증을 기록하며 새 Runtime 검사를 의미하지 않는다.
 
