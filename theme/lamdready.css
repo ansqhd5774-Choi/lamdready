@@ -93,3 +93,17 @@
  #lr-app .jp-card-photo{margin:16px 0 8px}
  .jp-entry-row{grid-template-columns:70px minmax(0,1fr) 44px;gap:6px}
 }
+
+/* Match the supplied mobile references: compact rows, clear primary labels. */
+#lr-app .jp-item-languages{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:8px;row-gap:2px}
+#lr-app .jp-item-languages .jp-item-ko{order:0;margin:0;font-size:14px;line-height:22px}
+#lr-app .jp-item-languages .jp-item-ja,#lr-app .jp-item-languages .jp-item-en{order:1;margin:0;font-size:12px;line-height:20px}
+#lr-app .jp-inline-editor{order:2;flex:0 0 calc(100% + 34px)}
+#lr-app .jp-inline-example{white-space:nowrap;font-size:11px}
+.jp-example-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#lr-app .jp-inline-editor .jp-conversion-help{display:none}
+#lr-app .jp-inline-editor:has(.jp-result-row:not([hidden])) .jp-conversion-help{display:block}
+#lr-app .jp-language-cards li{padding:10px 12px;border-radius:9px;align-items:flex-start}
+#lr-app .jp-language-cards{gap:6px}
+#lr-app .jp-entry-row{grid-template-columns:78px minmax(0,1fr) 48px;gap:8px}
+@media(max-width:600px){#lr-app .jp-entry-row{grid-template-columns:74px minmax(0,1fr) 44px;gap:6px}}
