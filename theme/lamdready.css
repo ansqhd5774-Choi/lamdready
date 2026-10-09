@@ -152,3 +152,4 @@
 #lr-app .jp-complete-card .jp-title-example{max-width:100%;white-space:normal;overflow-wrap:anywhere}
 #lr-app .jp-actions{justify-content:flex-end;margin:12px 0}
 @media(max-width:600px){#lr-app .jp-actions{align-items:flex-end}#lr-app .jp-all-editor .jp-split-box:has(textarea){grid-template-columns:1fr}#lr-app .jp-all-editor .jp-split-box:has(textarea)>.jp-translation-cell{grid-column:1;grid-row:2;border-left:0;border-top:1px solid #ccdddf}}
+#lr-app .jp-field-status[data-state="success"]{color:#25717b}

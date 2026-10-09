@@ -9,10 +9,10 @@ const sources=[document.getElementById('jp-surname-source'),document.getElementB
 for(const source of sources.slice(2)){
  const key=source.dataset.entrySource,editor=source.closest('.jp-all-editor'),output=editor.querySelector('output'),status=editor.querySelector('.jp-field-status'),button=editor.querySelector('[data-field-copy]'),other=editor.querySelector('.jp-purpose-other');
  if(key==='birth')source.max=new Date().toISOString().slice(0,10);
- const update=()=>{if(other)other.hidden=source.value!=='OTHER';const answer=formatEntry(key,source.value,{countryLookup:lookup,other:other?.value||''});output.value=answer.text;status.textContent=answer.error;status.hidden=!answer.error;button.disabled=!answer.text;source.setAttribute('aria-invalid',String(!!answer.error));};
+ const update=()=>{if(other)other.hidden=source.value!=='OTHER';const answer=formatEntry(key,source.value,{countryLookup:lookup,other:other?.value||''});output.value=answer.text;status.dataset.state='error';status.textContent=answer.error;status.hidden=!answer.error;button.disabled=!answer.text;source.setAttribute('aria-invalid',String(!!answer.error));};
  source.addEventListener('input',e=>{if(!e.isComposing)update();});source.addEventListener('change',update);source.addEventListener('compositionend',update);other?.addEventListener('input',update);
  source.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing&&source.tagName!=='TEXTAREA'){e.preventDefault();update();sources[sources.indexOf(source)+1]?.focus();}});
- button.addEventListener('click',async()=>{if(!output.value)return;try{await navigator.clipboard.writeText(output.value);status.textContent='복사했습니다.';status.hidden=false;}catch{status.textContent='복사 권한을 확인한 뒤 다시 눌러주세요.';status.hidden=false;}});
+ button.addEventListener('click',async()=>{if(!output.value)return;try{await navigator.clipboard.writeText(output.value);status.dataset.state='success';status.textContent='복사했습니다.';status.hidden=false;setTimeout(()=>{if(status.dataset.state==='success')status.hidden=true;},1800);}catch{status.textContent='복사 권한을 확인한 뒤 다시 눌러주세요.';status.hidden=false;}});
  document.getElementById('jp-entry-form').addEventListener('reset',()=>{output.value='';button.disabled=true;status.hidden=true;source.removeAttribute('aria-invalid');if(other){other.hidden=true;other.value='';}});
 }
 const given=document.getElementById('jp-given-source');given.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing){e.preventDefault();sources[2]?.focus();}});

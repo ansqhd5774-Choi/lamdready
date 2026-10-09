@@ -20,12 +20,12 @@
  for(const key of ['surname','given']){
   const source=document.getElementById('jp-'+key+'-source'),result=document.getElementById('jp-'+key+'-result'),help=document.getElementById('jp-'+key+'-help'),field=document.querySelector('#jp-entry-form input[name="'+key+'"]');if(!source)continue;
   const sync=()=>{if(field)field.value=result.value;};
-  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 오른쪽에 입력하세요.':'';help.hidden=!v||!!result.value;};
+  const convert=()=>{const v=source.value.trim().normalize('NFC');result.value=key==='surname'?(names[v]||(/^[a-zA-Z -]+$/.test(v)?v.toUpperCase():'')):given(v);sync();help.textContent=v&&!result.value?'여권 영문 표기를 왼쪽에 입력하세요.':'';help.hidden=!v||!!result.value;};
   controls[key]={source,result,convert};
   const copy=document.querySelector('[data-copy="'+key+'"]');
   const updateCopy=()=>{copy.disabled=!result.value;};
   new MutationObserver(updateCopy).observe(result,{childList:true});
-  copy.addEventListener('click',async()=>{if(!result.value)return;try{await navigator.clipboard.writeText(result.value);help.hidden=false;help.textContent='복사했습니다.';}catch{help.hidden=false;help.textContent='복사 권한을 확인한 뒤 다시 눌러주세요.';}});
+  copy.addEventListener('click',async()=>{if(!result.value)return;try{await navigator.clipboard.writeText(result.value);help.hidden=false;help.textContent='복사했습니다.';setTimeout(()=>{if(help.textContent==='복사했습니다.')help.hidden=true;},1800);}catch{help.hidden=false;help.textContent='복사 권한을 확인한 뒤 다시 눌러주세요.';}});
   const update=()=>{
    const v=source.value.trim().normalize('NFC').replace(/\s+/g,'');
    if(key==='surname'&&/^[가-힣]+$/.test(v)&&v.length>1&&!names[v]){
