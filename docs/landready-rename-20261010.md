@@ -12,3 +12,5 @@
 제한: 신규 Worker는 CLI로 실제배포. 기존Worker 삭제로 이전Git자동배포연결은 유지되지 않는다. 신규Git연결은 Cloudflare GUI 로그인 필요. 현재배포성공과 향후자동배포연결을 구분. Naver 목록의 이전블로그등록 삭제는 별도 확인 필요(브라우저 영구삭제 정책).
 
 증거 artifacts/landready-renamed-live.png. 백업 backups/blogger-theme-before-landready-rename.xml 및 blogger-theme-landready-rename.xml은 비공개 유지.
+
+후속: 네이버 이전블로그 등록1건 삭제 후 목록에서 부재 확인, 현행landready등록유지. Cloudflare 로그인된GUI에서 기존GitHub연동권한을 재사용하여 새Worker에 landready/main 연결. build npm run check && npm test && npm run build, deploy npx wrangler deploy, root /, preview build 비활성화 확인. 실제 Git push 기반 최초자동배포는 이어서 검증.

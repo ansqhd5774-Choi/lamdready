@@ -31,3 +31,5 @@ Cloudflare 빌드는 `scripts/build-assets.mjs`만 사용하여 운영 백업을
 - https://developers.cloudflare.com/workers/static-assets/binding/
 
 2026-10-10 명칭 이전: 새 Worker CLI 배포 완료. 이전 Worker 종료. 위 Git build 설정은 새 Worker에 재연결해야 하며 현재 자동배포 연결 완료로 간주하지 않는다.
+
+후속: 새Worker Git연결완료. ansqhd5774-Choi/landready main, 기존빌드토큰 재사용, 추가권한요청없음. 최초push빌드 결과 별도확인.
