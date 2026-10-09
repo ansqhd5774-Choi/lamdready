@@ -36,7 +36,7 @@ function createCountdown({go, progress, now=Date.now, later=setTimeout, clearLat
   window.addEventListener('pageshow',event=>{if(event.persisted){fields.forEach(f=>{f.code='';f.input.value='';close(f);});persist();}});
   fields.forEach(f=>{
     f.input.addEventListener('focus',()=>{countdown.cancel();render(f,Boolean(f.code));});
-    f.input.addEventListener('input',()=>{f.code='';persist();if(!f.input.composing)render(f);});
+    f.input.addEventListener('input',()=>{f.code='';persist();render(f);});
     f.input.addEventListener('compositionstart',()=>{f.input.composing=true;});
     f.input.addEventListener('compositionend',()=>{f.input.composing=false;render(f);});
     f.input.addEventListener('blur',()=>{const c=countries.find(c=>c.name===f.input.value.trim()&&c.code!==fields.find(x=>x!==f).code);if(c){f.code=c.code;persist();}close(f);});
