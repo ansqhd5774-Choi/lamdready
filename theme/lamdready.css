@@ -109,3 +109,5 @@
 @media(max-width:600px){#lr-app .jp-entry-row{grid-template-columns:74px minmax(0,1fr) 44px;gap:6px}}
 #lr-app .jp-entry-row:not(:has(.jp-inline-example)){grid-template-columns:minmax(0,1fr) 48px}
 @media(max-width:600px){#lr-app .jp-entry-row:not(:has(.jp-inline-example)){grid-template-columns:minmax(0,1fr) 44px}}
+
+#lr-app .jp-title-example{display:inline-flex;align-items:center;margin-left:5px;padding:2px 7px;border:1px dashed #c29a4f;border-radius:6px;background:#fff4d9;color:#805812;font-size:11px;line-height:16px;box-shadow:inset 0 1px 0 #fff;vertical-align:baseline}
