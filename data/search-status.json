@@ -26,12 +26,14 @@
   },
   "bing": {
     "publicVerificationTag": "CONFIRMED",
-    "ownership": "PROVIDER_VERIFICATION_ERROR",
-    "registration": "REGISTERED_UNVERIFIED_CONFIRMED",
-    "sitemapSubmitted": "NOT_SUBMITTED_CURRENT_DOMAIN",
+    "ownership": "VERIFIED_META_TAG_PROVIDER_CONFIRMED",
+    "registration": "REGISTERED_VERIFIED",
+    "sitemapSubmitted": "CONFIRMED_ONCE",
     "index": "UNVERIFIED",
-    "evidence": "artifacts/bing-landready-verification-error.png",
-    "registrationEvidence": "artifacts/bing-landready-registered-unverified.png; existing site list Not verified"
+    "evidence": "artifacts/bing-landready-submitted-20261010.png",
+    "registrationEvidence": "Existing site Not verified label removed; authenticated management accessible; sitemap success notification",
+    "sitemapFetch": "PROCESSING",
+    "sitemapRegisteredAt": "2026-10-10 Asia/Seoul; provider display 10/9/2026"
   },
   "indexNow": {
     "status": "REVIEW_COMPLETE_NOT_APPLIED",

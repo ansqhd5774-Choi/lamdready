@@ -215,10 +215,11 @@
       "id": "C22",
       "candidate": "Bing Webmaster Tools",
       "eligible": true,
-      "status": "PROVIDER_VERIFICATION_ERROR",
-      "evidence": "docs/travel-final-execution-20261010.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "artifacts/bing-landready-submitted-20261010.png",
       "runtimeVerified": false,
-      "note": "기존Bing등록유지·Not verified 확인. 제공자인증오류후새조건없어반복인증/중복등록하지않음. 소유확인·사이트맵대기."
+      "note": "기존 등록 사이트 메타 인증 성공, 관리 진입 및 사이트맵1회 제출 접수 확인. 처리중이며 수집·색인·검색성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "C23",
@@ -740,10 +741,11 @@
       "id": "H13",
       "candidate": "Bing 검색 관리",
       "eligible": true,
-      "status": "PROVIDER_VERIFICATION_ERROR",
-      "evidence": "docs/travel-final-execution-20261010.md",
+      "status": "IMPLEMENTED_SCOPED",
+      "evidence": "artifacts/bing-landready-submitted-20261010.png",
       "runtimeVerified": false,
-      "note": "C22동일: 등록유지미인증;제공자오류대기."
+      "note": "기존 등록 사이트 메타 인증 성공, 관리 진입 및 사이트맵1회 제출 접수 확인. 처리중이며 수집·색인·검색성과 완료를 뜻하지 않음.",
+      "implementationVerified": true
     },
     {
       "id": "H14",
