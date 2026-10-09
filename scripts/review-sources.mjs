@@ -17,9 +17,9 @@ for(const source of registry.items){
     if(bytes.length>10*1024*1024)throw Error('SIZE_LIMIT');
     const sha256=createHash('sha256').update(bytes).digest('hex');
     const changed=!!old?.sha256&&old.sha256!==sha256;
-    items.push({...base,status:changed?'CHANGE_REVIEW_REQUIRED':'FETCHED_UNREVIEWED',sha256,lastSuccessfulFetchAt:fetchedAt,bytes:bytes.length,regulationVerified:false,changeCandidate:changed});
+    items.push({...base,reviewedAt:changed?null:base.reviewedAt,verifiedAt:changed?null:base.verifiedAt,status:changed?'CHANGE_REVIEW_REQUIRED':'FETCHED_UNREVIEWED',sha256,lastSuccessfulFetchAt:fetchedAt,bytes:bytes.length,regulationVerified:false,changeCandidate:changed});
   }catch(error){
-    items.push({...base,status:'RETRIEVAL_FAILED',sha256:old?.sha256||null,lastSuccessfulFetchAt:old?.lastSuccessfulFetchAt||null,regulationVerified:false,changeCandidate:false,error:error.message});
+    items.push({...base,nextReviewAt:old?.nextReviewAt||null,status:'RETRIEVAL_FAILED',sha256:old?.sha256||null,lastSuccessfulFetchAt:old?.lastSuccessfulFetchAt||null,regulationVerified:false,changeCandidate:false,error:error.message});
   }
 }
 const report={checkedAt:new Date().toISOString(),processedCount:items.length,automaticApproval:false,items};

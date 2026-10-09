@@ -5,7 +5,8 @@ import vm from 'node:vm';
 test('action counters whitelist types and fields without accepting input values',()=>{
   const events=[];
   const window={};
-  vm.runInNewContext(fs.readFileSync('theme/entry-events.js','utf8'),{window,document:{dispatchEvent:event=>events.push(event.detail),addEventListener:()=>{}},CustomEvent:class{constructor(name,{detail}){this.detail=detail;}}});
+  let published;
+  vm.runInNewContext(fs.readFileSync('theme/entry-events.js','utf8'),{window,document:{documentElement:{setAttribute:(name,value)=>{published=value;}},dispatchEvent:event=>events.push(event.detail),addEventListener:()=>{}},CustomEvent:class{constructor(name,{detail}){this.detail=detail;}}});
   assert.equal(window.lrRecordAction('copy_success','surname'),true);
   assert.equal(window.lrRecordAction('copy_success','PRIVATE NAME'),false);
   assert.equal(window.lrRecordAction('copy_success','conviction'),true);
@@ -14,5 +15,6 @@ test('action counters whitelist types and fields without accepting input values'
   assert.equal(window.lrRecordAction('official_link_click','PRIVATE NAME'),true);
   assert.equal(window.lrReadActionCounts()['copy_success:surname'],1);
   assert.ok(!JSON.stringify(events).includes('PRIVATE NAME'));
+  assert.equal(JSON.parse(published)['copy_success:surname'],1);
   assert.deepEqual(Object.keys(events.at(-1)),['event']);
 });
